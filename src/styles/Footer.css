@@ -1,0 +1,151 @@
+.footer-background {
+    background-color: #004d1f; 
+    width: 100%;
+  }
+
+  
+  .footer-content {
+    color: #fff; 
+    padding: 8px 8px;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    transition: color 0.3s;
+  }
+
+  .social-icon:hover * {
+    fill: #33cc33;
+  }
+  
+    
+  .footer-links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links-item {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .footer-links__btn {
+    background: none;
+    border: none;
+    color: #00ff00;
+    cursor: pointer;
+    font-size: 12px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links__btn:hover {
+    color: #33cc33;
+  } 
+  
+  .footer-contact__text {
+    font-size: 12px;
+  }
+  
+  .footer-contact__mail {
+    color: #00ff00;
+    text-decoration: none;
+  }
+  
+  .footer-contact__mail:hover {
+    text-decoration: underline;
+  }
+  
+  /* Модальное окно */
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: #fff;
+    color: #004d1f;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+/* Стиль для контента модального окна */
+.modal-content {
+    font-family: 'Arial', sans-serif;
+    color: #004d1f;
+    padding: 20px;
+    max-width: 800px; /* Ограничение ширины модального окна */
+    margin: 0 auto;
+  }
+  
+
+  
+  button.expand-btn {
+    background-color: #00ff00;
+    color: #004d1f;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.expand-btn:hover {
+    background-color: #33cc33;
+  }
+  
+  /* Раздел с прокручиваемым содержимым */
+  .expanded-content {
+    margin-top: 20px;
+    max-height: 400px; /* Ограничение по высоте */
+    overflow-y: auto; /* Включение вертикальной прокрутки */
+    padding-right: 10px; /* Отступ справа для прокрутки */
+  }
+  
+  .scrollable-content {
+    max-height: 100%; /* Чтобы контент растягивался по высоте */
+    overflow-y: scroll; /* Прокрутка при необходимости */
+  }
+  
+  @media (max-width: 767px) {
+
+  
+
+  .footer-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+}

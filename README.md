@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+ДИПЛОМ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Программа: Разработчик 
+Специализация: Frontend разработка (React) 
+Колодина Наталия Сергеевна
 
-## Available Scripts
+Тема проекта: Разработка веб-приложения на React для отслеживания состояния организма и рекомендаций по поддержанию здоровья и внедрению полезных привычек
 
-In the project directory, you can run:
+Цель: Разработать веб-приложение на React, которое позволит пользователям отслеживать различные аспекты состояния организма (например, водный баланс, физическую активность, питание), а также получать персонализированные рекомендации по поддержанию здоровья и внедрению полезных привычек.
+Какую проблему решает: Проект решает проблему отсутствия удобных и интегрированных инструментов для мониторинга состояния организма и внедрения полезных привычек. В современных условиях люди часто сталкиваются с трудностью отслеживания различных аспектов своего здоровья и поддержания здорового образа жизни. Приложение будет предоставлять пользователю персонализированные рекомендации и напоминания, помогая ему поддерживать здоровые привычки и достигать целей по улучшению физического состояния.
 
-### `npm start`
+Что из себя представляет проект:
+Проект представляет собой веб-приложение, разработанное с использованием библиотеки React, предназначенное для отслеживания состояния здоровья пользователя и предоставления рекомендаций по поддержанию здоровья и внедрению полезных привычек. Основная цель приложения — помочь пользователям следить за своим физическим состоянием, вести здоровый образ жизни и создавать положительные привычки для улучшения качества жизни.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Приложение будет включать в себя следующие ключевые функции:
+Отслеживание потребления воды: пользователь сможет вводить количество выпитой воды, а система будет вычислять суточную норму в зависимости от веса пользователя и отображать прогресс в реальном времени.
+Регистрация веса: возможность сохранять и отслеживать изменения веса пользователя на протяжении времени.
+Генерация рекомендаций: система будет предоставлять пользователю советы по улучшению его здоровья, такие как напоминания о питье, советы по питанию и физической активности.
+Интерфейс для добавления и отслеживания привычек: возможность фиксировать полезные привычки, например, утреннюю зарядку или прием витаминов, с учетом их регулярности и прогресса.
+Это приложение будет удобным инструментом для тех, кто стремится к улучшению своего здоровья, желает построить правильные привычки и следить за своим состоянием в долгосрочной перспективе.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Задачи:
+- Разработка функционала для отслеживания состояния организма:
+- Создать интерфейс для ввода и отображения данных о здоровье пользователя, таких как водный баланс, физическая активность, вес, режим сна и питания.
+- Создание системы рекомендаций по поддержанию здоровья:
+- Разработать механизм персонализированных рекомендаций на основе введенных пользователем данных, направленных на улучшение состояния организма.
+- Внедрение функционала для установки и отслеживания полезных привычек:
+- Реализовать возможность добавления и отслеживания привычек (например, питьевая норма воды, регулярные тренировки), а также уведомлений и напоминаний для их соблюдения.
+- Создание интерфейса для визуализации данных:
+- Разработать удобный и интуитивно понятный пользовательский интерфейс, который позволит легко и быстро отслеживать изменения в состоянии здоровья и прогресс в достижении целей.
+Интеграция с внешними данными и сервисами (по необходимости):
+- Реализовать возможность синхронизации с внешними источниками данных, например, с фитнес-трекерами или мобильными приложениями, для автоматического получения информации о физической активности пользователя.
+- Оптимизация производительности и удобства использования:
+- Обеспечить быструю загрузку страниц, простоту взаимодействия и доступность всех функциональных возможностей на разных устройствах (мобильные телефоны, планшеты, десктопы).
 
-### `npm test`
+Специализация: Дипломный проект будет выполнен по специализации Frontend-разработка с использованием технологий React. В рамках этого проекта я сосредоточила внимание на разработке интерактивного веб-приложения, которое позволяет пользователям отслеживать аспекты их здоровья, получать рекомендации по поддержанию здорового образа жизни и внедрению полезных привычек.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+В процессе работы над проектом я буду работать с различными технологиями и инструментами, такими как React, JavaScript, CSS, а также использовать методы разработки UI/UX дизайна для создания удобного и интуитивно понятного интерфейса. Будет использована также работа с состоянием приложения через такие библиотеки как Redux.
+Таким образом, проект будет охватывать полный цикл разработки frontend части приложения, от проектирования интерфейса до реализации функционала и обеспечения отзывчивости и стабильности приложения.
 
-### `npm run build`
+План работы над дипломным проектом:
+1.Подготовительный этап
+2.Проектирование и создание архитектуры приложения
+3.Разработка пользовательского интерфейса (Frontend)
+4.Реализация логики приложения
+5.Тестирование приложения
+5.Оптимизация и улучшения
+6.Документирование проекта
+7.Презентация и защита проекта
+Каждый этап будет включать в себя промежуточные проверки, исправление ошибок и корректировку функционала в процессе работы.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Инструменты:  React, Redux (или Context API), React Router, react-router-dom, react-modal, react-calendar, react-modal, axios, CSS/SCSS, LocalStorage, Git, VS Code.

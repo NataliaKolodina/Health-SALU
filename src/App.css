@@ -1,38 +1,533 @@
-.App {
-  text-align: center;
+body {
+  background: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.site__size {
+  flex: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.site__space {
+  margin-top: 36px;
+  margin-bottom: 100px;
+}
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main__icon {
+  max-height: 180px;
+}
+
+.main__heading {
+  margin-top: 36px;
+  display: flex;
+  font-size: 48px;
   color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main__subheading {
+  margin-top: 16px;
+  font-size: 24px;
+  color: #f0f0f0; /* Белый текст */
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main__nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.main__btn {
+  width: 280px;
+  height: 280px;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  margin: 10px 0;
+  -webkit-text-stroke: 1px white; /* для Safari/Chrome */
+  text-stroke: 1px white; /* для других браузеров */
+  color: black; 
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  letter-spacing: 1px;
+  font-weight: 1000;
+}
+
+.main__btn:hover {
+  opacity: 0.7;
+}
+
+.main__btn-sport {
+  background: url(../public/img/sport4.webp) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-habits {
+  background: url(../public/img/habits-btn.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-food {
+  background: url(../public/img/food4.webp) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-sleep {
+  background: url(../public/img/sleep.webp) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-water {
+  background: url(../public/img/water.webp) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-yoga {
+  background: url(../public/img/home-yoga.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main__btn-outwork {
+  background: url(../public/img/outwork.jpg) no-repeat;
+  background-size: cover;
+}
+
+.site__input {
+  width: 250px;
+  padding: 12px;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #f0f0f0;
+}
+
+.input__habit {
+  width: 400px;
+}
+
+.site__input:focus {
+  outline: none;
+  border-color: #388e3c;
+}
+
+.btn__foot {
+  display: flex;
+  gap: 20px;
+}
+
+.habit-form {
+  display: flex;
+  gap: 20px;
+}
+
+.site__heading {
+  margin-top: 20px;
+  font-size: 48px;
+  color: #66bb6a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.site__heading-food {
+  text-align: start;
+  margin-top: 0;
+}
+
+.site__btn {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.site__btn:hover {
+  background-color: #388e3c;
+}
+
+.site__btn-habits {
+  font-size: 12px;
+  padding: 8px 15px;
+}
+
+.site__btn-habitsinfo {
+  margin-top: 52px;
+  margin-bottom: 96px;
+}
+
+.site__text {
+  font-size: 20px;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.site__text-habits {
+  width: 350px;
+}
+
+.site__text-center {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.site__form-result {
+  margin-top: 48px;
+  border-top: solid 5px #66bb6a;
+  border-left: solid 5px #66bb6a;
+  padding-top: 24px;
+  padding-left: 24px;
+  font-size: 36px;
+}
+
+.site__text-food {
+  max-width: 450px;
+}
+
+.site__subtitle {
+  color: #66bb6a;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.site__subtitle-sport {
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+.site__subtitle-link {
+  cursor: pointer;
+}
+
+.site__subtitle-link:hover {
+  color: #388e3c;
+}
+
+.site__subtitle-city {
+  margin-top: 24px;
+  width: 250px;
+  border-top: 1px solid #66bb6a;
+  padding-top: 20px;
+}
+
+.site__item {
+  color: #388e3c;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.site__img-food {
+  width: 300px;
+}
+
+.habits-info__item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  align-items: center;
+}
+
+.site__subtitle-habits {
+  color: #deffd7;
+  text-align: center;
+}
+
+.site__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.site__list-food {
+  display: block;
+}
+
+.site__list-habits {
+  margin-bottom: 36px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.site__list-item {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.sport__result {
+  margin-top: 36px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__discription {
+  margin-bottom: 36px;
+  max-width: 560px;
+}
+
+.video__play {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  border: solid 1px white;
+  cursor: pointer;
+  border-radius: 25%;
+  z-index: 2;
+  margin: 0;
+}
+
+.video__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.video__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.523);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video__modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.video__modal-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 6px;
+}
+
+.video__modal-video {
+  position: relative;
+  background-color: #225503;
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  height: 800px;
+}
+
+.video__modal-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.site__form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.site__form-habits {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.site__form-sleep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.site__form-item {
+  border-bottom: solid 1px #66bb6a;
+}
+
+.site__form-water {
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+
+.food__contant {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+  border-top: solid 5px #66bb6a;
+  border-left: solid 5px #66bb6a;
+  padding-left: 36px;
+  padding-top: 20px;
+}
+
+.food__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 736px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .site__btn {
+    padding: 12px 20px;
+  }
+
+  .site__list {
+    gap: 4px;
+  }
+
+  .tablet-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video__play {
+    font-size: 16px;
+  }
+
+  .sport__result {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 359px;
+  }
+
+  .site__spice {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .main {
+    gap: 8px;
+  }
+
+  .main__heading {
+    margin-top: 12px;
+    font-size: 28px;
+  }
+
+  .main__subheading {
+    margin-top: 16px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .main__icon {
+    max-height: 100px;
+  }
+
+  .site__heading {
+    font-size: 36px;
+  }
+
+  .site__subtitle {
+    max-width: 359px;
+  }
+
+  .site__text {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+
+  .site__form-mobile {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .site__list-padding {
+    padding-inline-start: 0;
+  }
+
+  .site__form {
+    gap: 8px;
+  }
+
+  .site__form-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .site__list-center {
+    align-items: center;
+  }
+
+  .video__item iframe {
+    width: 350px;
+  }
+
+  .video__play {
+    display: none;
+  }
+
+  .site__text-food {
+    max-width: 300px;
+  }
+
+  .site__img-food {
+    width: 200px;
+  }
+
+  .site__list-food {
+    margin-top: 0;
+    max-width: 450px;
+  }
+
+  .site__text-margin {
+    margin-bottom: 48px;
   }
 }

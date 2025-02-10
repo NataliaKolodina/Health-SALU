@@ -1,0 +1,163 @@
+/* Header.css */
+
+/* Основной стиль хедера */
+.header {   
+    color: #ffffff; 
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+  }
+
+  .header-background {
+
+      position: sticky;
+      top: 0;
+      z-index: 5;
+
+    width: 100%;
+    background-color: #006400;
+  }
+  
+
+
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00FF00, #000000);
+    background-clip: text;
+    color: rgb(33, 76, 1);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6), 0 0 60px rgba(0, 255, 0, 0.4);
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes neon {
+    0% {
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6), 0 0 30px rgba(0, 255, 0, 0.4);
+    }
+    100% {
+      text-shadow: 0 0 30px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 0.8), 0 0 120px rgba(0, 255, 0, 0.5);
+    }
+  }
+  
+  .hello {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hello__heading {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  
+  .id__btn {
+    font-size: 16px;
+    background: none;
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+
+  .header__modal {
+     background-color: black;
+      position: absolute;
+      z-index: 10;
+    }
+  
+
+
+  .header__modal .ReactModal__Content--after-open {
+  position: absolute !important;
+  top: 60px !important;
+  left: 50% !important; 
+  border: solid 5px #66bb6a !important;
+  background-color: #000000 !important;
+  width: 500px !important;
+  height: 250px !important;
+
+
+ }
+
+ .modal__heading {
+  margin: 28px auto;
+ }
+
+
+ @media (max-width: 1024px) {
+  .header__modal .ReactModal__Content--after-open {
+  top: 60px !important;
+  left: 25px !important;
+}
+ }
+
+
+
+ @media (max-width: 767px) {
+
+
+  .logo {
+    font-size: 32px;
+}
+
+.logo svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hello {
+  gap: 0;
+}
+
+.hello__heading {
+  font-size: 24px;
+}
+
+.id__btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header__modal .ReactModalPortal {
+  position: absolute;
+right: 0;
+
+}
+
+
+
+.header__modal .ReactModal__Content--after-open {
+  top: 28px !important;
+  left: 92px !important;
+  border: solid 3px #66bb6a !important;
+  width: 280px !important;
+  height: 200px !important;
+
+}
+
+
+
+
+.modal__heading {
+  margin: -10px auto; 
+}
+
+.site__form-hello {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+}
