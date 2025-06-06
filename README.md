@@ -1,52 +1,89 @@
-ДИПЛОМ
+# Health-SALU
 
-Программа: Разработчик 
-Специализация: Frontend разработка (React) 
-Колодина Наталия Сергеевна
+**Health-SALU** is a React-based web application designed to help users monitor their health status and receive personalized recommendations to maintain a healthy lifestyle and build positive habits.
 
-Тема проекта: Разработка веб-приложения на React для отслеживания состояния организма и рекомендаций по поддержанию здоровья и внедрению полезных привычек
+---
 
-Цель: Разработать веб-приложение на React, которое позволит пользователям отслеживать различные аспекты состояния организма (например, водный баланс, физическую активность, питание), а также получать персонализированные рекомендации по поддержанию здоровья и внедрению полезных привычек.
-Какую проблему решает: Проект решает проблему отсутствия удобных и интегрированных инструментов для мониторинга состояния организма и внедрения полезных привычек. В современных условиях люди часто сталкиваются с трудностью отслеживания различных аспектов своего здоровья и поддержания здорового образа жизни. Приложение будет предоставлять пользователю персонализированные рекомендации и напоминания, помогая ему поддерживать здоровые привычки и достигать целей по улучшению физического состояния.
+## Demo
 
-Что из себя представляет проект:
-Проект представляет собой веб-приложение, разработанное с использованием библиотеки React, предназначенное для отслеживания состояния здоровья пользователя и предоставления рекомендаций по поддержанию здоровья и внедрению полезных привычек. Основная цель приложения — помочь пользователям следить за своим физическим состоянием, вести здоровый образ жизни и создавать положительные привычки для улучшения качества жизни.
+Explore the live demo here:  
+[https://nataliakolodina.github.io/Health-SALU/#/](https://nataliakolodina.github.io/Health-SALU/#/)
 
-Приложение будет включать в себя следующие ключевые функции:
-Отслеживание потребления воды: пользователь сможет вводить количество выпитой воды, а система будет вычислять суточную норму в зависимости от веса пользователя и отображать прогресс в реальном времени.
-Регистрация веса: возможность сохранять и отслеживать изменения веса пользователя на протяжении времени.
-Генерация рекомендаций: система будет предоставлять пользователю советы по улучшению его здоровья, такие как напоминания о питье, советы по питанию и физической активности.
-Интерфейс для добавления и отслеживания привычек: возможность фиксировать полезные привычки, например, утреннюю зарядку или прием витаминов, с учетом их регулярности и прогресса.
-Это приложение будет удобным инструментом для тех, кто стремится к улучшению своего здоровья, желает построить правильные привычки и следить за своим состоянием в долгосрочной перспективе.
+---
 
-Задачи:
-- Разработка функционала для отслеживания состояния организма:
-- Создать интерфейс для ввода и отображения данных о здоровье пользователя, таких как водный баланс, физическая активность, вес, режим сна и питания.
-- Создание системы рекомендаций по поддержанию здоровья:
-- Разработать механизм персонализированных рекомендаций на основе введенных пользователем данных, направленных на улучшение состояния организма.
-- Внедрение функционала для установки и отслеживания полезных привычек:
-- Реализовать возможность добавления и отслеживания привычек (например, питьевая норма воды, регулярные тренировки), а также уведомлений и напоминаний для их соблюдения.
-- Создание интерфейса для визуализации данных:
-- Разработать удобный и интуитивно понятный пользовательский интерфейс, который позволит легко и быстро отслеживать изменения в состоянии здоровья и прогресс в достижении целей.
-Интеграция с внешними данными и сервисами (по необходимости):
-- Реализовать возможность синхронизации с внешними источниками данных, например, с фитнес-трекерами или мобильными приложениями, для автоматического получения информации о физической активности пользователя.
-- Оптимизация производительности и удобства использования:
-- Обеспечить быструю загрузку страниц, простоту взаимодействия и доступность всех функциональных возможностей на разных устройствах (мобильные телефоны, планшеты, десктопы).
+## Overview
 
-Специализация: Дипломный проект будет выполнен по специализации Frontend-разработка с использованием технологий React. В рамках этого проекта я сосредоточила внимание на разработке интерактивного веб-приложения, которое позволяет пользователям отслеживать аспекты их здоровья, получать рекомендации по поддержанию здорового образа жизни и внедрению полезных привычек.
+Health-SALU addresses the common challenge of tracking multiple health aspects in a convenient and integrated way. It empowers users to monitor hydration, physical activity, nutrition, sleep quality, and other habits, providing tailored advice to promote wellbeing.
 
-В процессе работы над проектом я буду работать с различными технологиями и инструментами, такими как React, JavaScript, CSS, а также использовать методы разработки UI/UX дизайна для создания удобного и интуитивно понятного интерфейса. Будет использована также работа с состоянием приложения через такие библиотеки как Redux.
-Таким образом, проект будет охватывать полный цикл разработки frontend части приложения, от проектирования интерфейса до реализации функционала и обеспечения отзывчивости и стабильности приложения.
+---
 
-План работы над дипломным проектом:
-1.Подготовительный этап
-2.Проектирование и создание архитектуры приложения
-3.Разработка пользовательского интерфейса (Frontend)
-4.Реализация логики приложения
-5.Тестирование приложения
-5.Оптимизация и улучшения
-6.Документирование проекта
-7.Презентация и защита проекта
-Каждый этап будет включать в себя промежуточные проверки, исправление ошибок и корректировку функционала в процессе работы.
+## Key Features
 
-Инструменты:  React, Redux (или Context API), React Router, react-router-dom, react-modal, react-calendar, react-modal, axios, CSS/SCSS, LocalStorage, Git, VS Code.
+- **Water Intake Tracking:** Users can log their daily water consumption. The app calculates personalized daily water intake goals based on user weight and shows real-time progress.
+- **Weight Tracking:** Save and visualize weight changes over time.
+- **Habit Management:** Add and track healthy habits like morning exercises or vitamin intake with reminders and progress tracking.
+- **Personalized Health Recommendations:** The system offers actionable tips and reminders for hydration, nutrition, physical activity, and sleep.
+- **Interactive Data Visualization:** Clear, intuitive UI to monitor progress and health trends.
+- **Responsive Design:** Works seamlessly on mobile devices, tablets, and desktops.
+
+---
+
+## Technologies Used
+
+- React (with React Router for client-side routing)
+- Redux / Context API (for state management)
+- Axios (for API requests)
+- React Calendar (for date inputs)
+- React Modal (for dialogs)
+- CSS/SCSS (custom styling)
+- LocalStorage (for persistent user data)
+- Git and GitHub for version control and deployment
+
+---
+
+## Project Structure
+/src
+/components # Reusable UI components and modals
+/pages # Page-level components (routes)
+App.js # Root component with routing setup
+index.js # Entry point
+/public
+index.html # Main HTML template
+package.json # Project config and dependencies
+README.md # This documentation file
+
+## Getting Started
+
+To run the project locally:
+
+1. Clone the repository:
+    git clone https://github.com/NataliaKolodina/Health-SALU.git
+    cd Health-SALU
+2. Install dependencies:
+    npm install
+3. Start the development server:
+    npm start
+4. Open http://localhost:3000 in your browser to see the app.
+
+## Build and Deployment
+
+To create a production build:
+npm run build
+
+To deploy the app to GitHub Pages:
+npm run deploy
+
+## Future Improvements
+
+- Integration with fitness trackers and external health APIs for automated data sync.
+- Advanced analytics and visual reports on health trends.
+- User authentication and multi-user support.
+- Push notifications and customizable reminders.
+
+## About the Author
+
+Nataliia Kolodina
+Frontend Developer specializing in React with practical experience building interactive and user-friendly web applications focused on health and wellbeing.
+
+GitHub: [https://github.com/NataliaKolodina](https://github.com/NataliaKolodina)
+LinkedIn: [https://www.linkedin.com/in/nataliia-kolodina](https://www.linkedin.com/in/nataliia-kolodina/)
