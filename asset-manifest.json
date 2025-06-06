@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Health-SALU/static/css/main.6ab630d4.css",
-    "main.js": "/Health-SALU/static/js/main.dc9351a3.js",
+    "main.js": "/Health-SALU/static/js/main.ea2b9f52.js",
     "static/js/453.6a17e5ba.chunk.js": "/Health-SALU/static/js/453.6a17e5ba.chunk.js",
     "static/media/home-yoga.jpg": "/Health-SALU/static/media/home-yoga.d8ff78af11ed84bae8ff.jpg",
     "static/media/habits-btn.jpg": "/Health-SALU/static/media/habits-btn.9aa5f348fab6caf299eb.jpg",
@@ -12,11 +12,11 @@
     "static/media/sport4.webp": "/Health-SALU/static/media/sport4.9496c61ba060f2eaedec.webp",
     "index.html": "/Health-SALU/index.html",
     "main.6ab630d4.css.map": "/Health-SALU/static/css/main.6ab630d4.css.map",
-    "main.dc9351a3.js.map": "/Health-SALU/static/js/main.dc9351a3.js.map",
+    "main.ea2b9f52.js.map": "/Health-SALU/static/js/main.ea2b9f52.js.map",
     "453.6a17e5ba.chunk.js.map": "/Health-SALU/static/js/453.6a17e5ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ab630d4.css",
-    "static/js/main.dc9351a3.js"
+    "static/js/main.ea2b9f52.js"
   ]
 }
