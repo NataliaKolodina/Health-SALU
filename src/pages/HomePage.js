@@ -13,7 +13,7 @@ function HomePage() {
           <h1 className='main__heading'>Welcome to the Health Tracking App!</h1>     
           <h3 className='main__subheading'>Track your health and achieve your goals.</h3>
 
-          <img className='main__icon' src="/img/cardiogramma.gif" alt='cardiogramma' />
+          <img className='main__icon' src=" /Health-SALU/img/cardiogramma.gif" alt='cardiogramma' />
 
           <h2 className='main__subheading'>Choose a section:</h2>
           <div className='main__nav'>

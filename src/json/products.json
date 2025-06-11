@@ -7,55 +7,55 @@
           "name": "Apples",
           "description": "Apples are rich in vitamin C, fiber, and antioxidants, which help strengthen the immune system and improve digestion.",
           "dailyRecommendation": "1-2 apples per day",
-          "image": "/img/apple.jpg"
+          "image": "/Health-SALU/img/apple.jpg"
         },
         {
           "name": "Bananas",
           "description": "Bananas are high in potassium, which helps maintain normal blood pressure, and also contain vitamins B6 and C.",
           "dailyRecommendation": "1 banana per day",
-          "image": "/img/banan.webp"
+          "image": "/Health-SALU/img/banan.webp"
         },
         {
           "name": "Pears",
           "description": "Pears contain fiber, vitamins C and K, which help improve digestion, support skin health, and strengthen the immune system.",
           "dailyRecommendation": "1-2 pears",
-          "image": "/img/pear.jpg"
+          "image": "/Health-SALU/img/pear.jpg"
         },
         {
           "name": "Oranges",
           "description": "Oranges are rich in vitamin C, which boosts immunity, improves skin health, aids iron absorption, and have antioxidant properties.",
           "dailyRecommendation": "1 orange",
-          "image": "/img/orange.webp"
+          "image": "/Health-SALU/img/orange.webp"
         },
         {
           "name": "Kiwis",
           "description": "Kiwis are an excellent source of vitamins C and E, as well as fiber, which promote immune function, skin health, and digestion.",
           "dailyRecommendation": "1-2 kiwis",
-          "image": "/img/kiwi.jpg"
+          "image": "/Health-SALU/img/kiwi.jpg"
         },
         {
           "name": "Pomegranate",
           "description": "Pomegranate contains powerful antioxidants, vitamins C and K, which support heart health, improve metabolism, and help reduce inflammation.",
           "dailyRecommendation": "1 pomegranate",
-          "image": "/img/granat.webp"
+          "image": "/Health-SALU/img/granat.webp"
         },
         {
           "name": "Blueberries",
           "description": "Blueberries are rich in antioxidants and vitamin C, which enhance memory, strengthen the immune system, and support eye health.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/blueberries.jpg"
+          "image": "/Health-SALU/img/blueberries.jpg"
         },
         {
           "name": "Peaches",
           "description": "Peaches are an excellent source of vitamins A and C, which support skin health, improve vision, and boost immunity.",
           "dailyRecommendation": "1-2 peaches",
-          "image": "/img/peach.jpg"
+          "image": "/Health-SALU/img/peach.jpg"
         },
         {
           "name": "Watermelon",
           "description": "Watermelon contains a high amount of water, vitamin C, and antioxidants, which help hydrate the body, support heart health, and improve metabolism.",
           "dailyRecommendation": "300-400 grams",
-          "image": "/img/watermelon.webp"
+          "image": "/Health-SALU/img/watermelon.webp"
         }
       ]
     },
@@ -66,61 +66,61 @@
           "name": "Spinach",
           "description": "Spinach is rich in vitamins A, C, and K, and contains antioxidants that support eye and skin health.",
           "dailyRecommendation": "1-2 cups per day",
-          "image": "/img/shpinat.webp"
+          "image": "/Health-SALU/img/shpinat.webp"
         },
         {
           "name": "Carrot",
           "description": "Carrots are an excellent source of vitamin A, important for eye health and the immune system.",
           "dailyRecommendation": "1 carrot per day",
-          "image": "img/carrot.webp"
+          "image": "/Health-SALU/img/carrot.webp"
         },
         {
           "name": "Broccoli",
           "description": "Broccoli contains vitamins C, K, and A, as well as antioxidants that help maintain immunity and bone health.",
           "dailyRecommendation": "200-300 grams",
-          "image": "/img/broccoli.jpg"
+          "image": "/Health-SALU/img/broccoli.jpg"
         },
         {
           "name": "Cabbage",
           "description": "Cabbage contains vitamins C and K, folic acid, and fiber, which support heart health, strengthen immunity, and improve digestion.",
           "dailyRecommendation": "200-250 grams",
-          "image": "img/cabbage.jpeg"
+          "image": "/Health-SALU/img/cabbage.jpeg"
         },
         {
           "name": "Tomatoes",
           "description": "Tomatoes are rich in vitamin C and lycopene, a powerful antioxidant that helps prevent heart disease and cancer.",
           "dailyRecommendation": "1-2 medium tomatoes",
-          "image": "/img/tomato.jpg"
+          "image": "/Health-SALU/img/tomato.jpg"
         },
         {
           "name": "Bell Pepper",
           "description": "Bell peppers contain vitamin C and beta-carotene, which strengthen the immune system, improve skin health, and support vision.",
           "dailyRecommendation": "1-2 pieces",
-          "image": "/img/peper.webp"
+          "image": "/Health-SALU/img/peper.webp"
         },
         {
           "name": "Pumpkin",
           "description": "Pumpkin is rich in vitamins A and C, and potassium, which help maintain healthy blood pressure and improve metabolism.",
           "dailyRecommendation": "150-200 grams",
-          "image": "/img/pumpkin.jpg"
+          "image": "/Health-SALU/img/pumpkin.jpg"
         },
         {
           "name": "Zucchini",
           "description": "Zucchini is a low-calorie vegetable containing vitamins A and C, and potassium that support heart health and normalize blood pressure.",
           "dailyRecommendation": "150-200 grams",
-          "image": "/img/zucchini.webp"
+          "image": "/Health-SALU/img/zucchini.webp"
         },
         {
           "name": "Green Beans",
           "description": "Green beans contain fiber, vitamins C and K, and folic acid, which help improve digestion and strengthen the immune system.",
           "dailyRecommendation": "150-200 grams",
-          "image": "/img/green bean.webp"
+          "image": "/Health-SALU/img/green bean.webp"
         },
         {
           "name": "Beetroot",
           "description": "Beetroot promotes better blood circulation, supports liver health, and helps normalize hemoglobin levels due to its high iron content.",
           "dailyRecommendation": "150-200 grams",
-          "image": "/img/beet.jpg"
+          "image": "/Health-SALU/img/beet.jpg"
         }
       ]
     },
@@ -131,61 +131,61 @@
           "name": "Walnuts",
           "description": "Walnuts are rich in omega-3 fatty acids, antioxidants, and vitamins that support heart health, improve memory, and strengthen the immune system.",
           "dailyRecommendation": "20-30 grams",
-          "image": "/img/Walnuts.webp"
+          "image": "/Health-SALU/img/Walnuts.webp"
         },
         {
           "name": "Almonds",
           "description": "Almonds contain vitamins E and B2, magnesium, and fiber, which promote skin health, strengthen bones, and help reduce cholesterol levels.",
           "dailyRecommendation": "20-30 grams",
-          "image": "/img/Almond.jpg"
+          "image": "/Health-SALU/img/Almond.jpg"
         },
         {
           "name": "Cashews",
           "description": "Cashews help maintain healthy blood sugar levels, improve bone and skin health due to their high magnesium and copper content.",
           "dailyRecommendation": "20-25 grams",
-          "image": "/img/Cashews.jpg"
+          "image": "/Health-SALU/img/Cashews.jpg"
         },
         {
           "name": "Chia Seeds",
           "description": "Chia seeds are rich in omega-3 fatty acids, fiber, and antioxidants that support heart function, improve digestion, and normalize blood sugar levels.",
           "dailyRecommendation": "15-20 grams",
-          "image": "/img/Chia Seeds.jpg"
+          "image": "/Health-SALU/img/Chia Seeds.jpg"
         },
         {
           "name": "Flax Seeds",
           "description": "Flax seeds are an excellent source of omega-3, fiber, and antioxidants that help improve digestion, reduce inflammation, and support heart health.",
           "dailyRecommendation": "15-20 grams",
-          "image": "/img/Flax seeds.webp"
+          "image": "/Health-SALU/img/Flax seeds.webp"
         },
         {
           "name": "Pistachios",
           "description": "Pistachios contain antioxidants, vitamins B6 and K, which support cardiovascular health, improve cholesterol levels, and reduce the risk of chronic diseases.",
           "dailyRecommendation": "20-30 grams",
-          "image": "/img/Pistachios.webp"
+          "image": "/Health-SALU/img/Pistachios.webp"
         },
         {
           "name": "Pumpkin Seeds",
           "description": "Pumpkin seeds are rich in magnesium, zinc, and antioxidants, which support skin health, boost the immune system, and improve heart function.",
           "dailyRecommendation": "30 grams",
-          "image": "/img/Pumpkin Seeds.jpeg"
+          "image": "/Health-SALU/img/Pumpkin Seeds.jpeg"
         },
         {
           "name": "Pine Nuts",
           "description": "Pine nuts contain vitamins B and E, magnesium, and proteins that support immunity, strengthen bones, and help normalize blood sugar levels.",
           "dailyRecommendation": "20-30 grams",
-          "image": "/img/Pine nuts.jpg"
+          "image": "/Health-SALU/img/Pine nuts.jpg"
         },
         {
           "name": "Sunflower Seeds",
           "description": "Sunflower seeds are a source of vitamin E, magnesium, and antioxidants, which help improve skin health, maintain normal cholesterol levels, and support blood pressure regulation.",
           "dailyRecommendation": "30-40 grams",
-          "image": "/img/Sunflower seeds.jpg"
+          "image": "/Health-SALU/img/Sunflower seeds.jpg"
         },
         {
           "name": "Pecans",
           "description": "Pecans are rich in monounsaturated fats and antioxidants that help support heart health, improve cholesterol levels, and normalize metabolism.",
           "dailyRecommendation": "20-30 grams",
-          "image": "/img/Pecans.webp"
+          "image": "/Health-SALU/img/Pecans.webp"
         }
       ]
     },
@@ -196,31 +196,31 @@
           "name": "Chicken Breast",
           "description": "Chicken breast is an excellent source of protein, low in calories, and rich in B vitamins. It promotes muscle growth and repair, supports normal energy levels, and strengthens the immune system.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/Chicken.jpg"
+          "image": "/Health-SALU/img/Chicken.jpg"
         },
         {
           "name": "Lean Beef",
           "description": "Beef is a valuable source of high-quality protein, iron, and B vitamins, including vitamin B12. It helps maintain healthy blood, normalizes energy levels, and promotes muscle growth.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/Beef.webp"
+          "image": "/Health-SALU/img/Beef.webp"
         },
         {
           "name": "Turkey",
           "description": "Turkey meat is low in calories but rich in protein, B vitamins, and selenium. It supports heart health, strengthens immunity, and aids tissue repair after physical activity.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/Turkey.webp"
+          "image": "/Health-SALU/img/Turkey.webp"
         },
         {
           "name": "Rabbit",
           "description": "Rabbit meat contains a lot of protein and little fat. It is rich in phosphorus and B vitamins, which help normalize metabolism, improve nervous system function, and support bone health.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/Rabbit.jpg"
+          "image": "/Health-SALU/img/Rabbit.jpg"
         },
         {
           "name": "Lean Lamb",
           "description": "Lean lamb is high in protein, zinc, iron, and B vitamins. It helps tissue repair, improves metabolism, and supports blood health.",
           "dailyRecommendation": "100-150 grams",
-          "image": "/img/Sheepmeat.jpg"
+          "image": "/Health-SALU/img/Sheepmeat.jpg"
         }
       ]
     },
@@ -231,25 +231,25 @@
           "name": "Olive Oil",
           "description": "Olive oil is a source of monounsaturated fats beneficial for cardiovascular health. It is also rich in antioxidants (vitamins E and K) and has anti-inflammatory properties. Regular consumption helps improve cholesterol levels and supports skin health.",
           "dailyRecommendation": "1-2 tablespoons",
-          "image": "/img/Olive oil.webp"
+          "image": "/Health-SALU/img/Olive oil.webp"
         },
         {
           "name": "Coconut Oil",
           "description": "Coconut oil contains medium-chain triglycerides (MCTs), which may improve metabolism and boost energy levels. It also promotes skin and hair health and has antibacterial properties.",
           "dailyRecommendation": "1-2 tablespoons",
-          "image": "/img/Coconut oil.jpg"
+          "image": "/Health-SALU/img/Coconut oil.jpg"
         },
         {
           "name": "Flaxseed Oil",
           "description": "Flaxseed oil is rich in omega-3 fatty acids that help reduce inflammation, improve brain function, and support heart health. It may also enhance the condition of skin and hair.",
           "dailyRecommendation": "1-2 tablespoons",
-          "image": "/img/Linseed oil.webp"
+          "image": "/Health-SALU/img/Linseed oil.webp"
         },
         {
           "name": "Avocado Oil",
           "description": "Avocado oil is a source of monounsaturated fats and vitamins E and K. It helps reduce cholesterol levels, improves skin health, reduces inflammation, and supports heart function.",
           "dailyRecommendation": "1-2 tablespoons",
-          "image": "/img/Avocado oil.webp"
+          "image": "/Health-SALU/img/Avocado oil.jpg"
         }
       ]
     }
