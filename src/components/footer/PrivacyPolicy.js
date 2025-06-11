@@ -1,71 +1,70 @@
-// PrivacyPolicy.js
 import React, { useState } from 'react';
 
 const PrivacyPolicy = () => {
-  const [isExpanded, setIsExpanded] = useState(false); // Состояние для развернутого контента
+  const [isExpanded, setIsExpanded] = useState(false); // State for expanded content
 
   const toggleContent = () => {
-    setIsExpanded(!isExpanded); // Переключение состояния
+    setIsExpanded(!isExpanded); // Toggle state
   };
 
   return (
     <div className="modal-content">
-      <h2>Политика конфиденциальности</h2>
+      <h2>Privacy Policy</h2>
       <p>
-        Мы ценим вашу конфиденциальность и стремимся защитить ваши персональные данные. В этой политике
-        конфиденциальности мы объясняем, как мы собираем, используем, обрабатываем и защищаем вашу информацию.
+        We value your privacy and strive to protect your personal data. In this privacy policy,
+        we explain how we collect, use, process, and safeguard your information.
       </p>
       
       <p>
-        Используя наше приложение, вы соглашаетесь с условиями, изложенными в этой политике конфиденциальности.
+        By using our application, you agree to the terms outlined in this privacy policy.
       </p>
 
-      {/* Кнопка для разворачивания/сворачивания дополнительной информации */}
+      {/* Button to expand/collapse additional information */}
       <button onClick={toggleContent} className="expand-btn">
-        {isExpanded ? 'Свернуть информацию' : 'Развернуть подробности'}
+        {isExpanded ? 'Collapse Information' : 'Expand Details'}
       </button>
 
       {isExpanded && (
         <div className="expanded-content">
-          <h3>Какие данные мы собираем?</h3>
+          <h3>What data do we collect?</h3>
           <ul>
-            <li><strong>Личные данные:</strong> Имя, адрес электронной почты, дата рождения.</li>
-            <li><strong>Данные о здоровье:</strong> Данные о вашем физическом состоянии, активности, сне и т.д.</li>
-            <li><strong>Данные устройства:</strong> Тип устройства, операционная система, уникальные идентификаторы устройства.</li>
-            <li><strong>Данные о взаимодействии с приложением:</strong> Данные о том, как вы используете приложение, какие функции часто используете и т.д.</li>
+            <li><strong>Personal data:</strong> Name, email address, date of birth.</li>
+            <li><strong>Health data:</strong> Information about your physical condition, activity, sleep, etc.</li>
+            <li><strong>Device data:</strong> Device type, operating system, unique device identifiers.</li>
+            <li><strong>App interaction data:</strong> Data about how you use the app, which features you frequently use, etc.</li>
           </ul>
 
-          <h3>Как мы используем ваши данные?</h3>
+          <h3>How do we use your data?</h3>
           <p>
-            Мы используем ваши данные для следующих целей:
+            We use your data for the following purposes:
           </p>
           <ul>
-            <li>Предоставление персонализированных рекомендаций по здоровью.</li>
-            <li>Анализ и улучшение качества обслуживания приложения.</li>
-            <li>Отправка уведомлений о новых функциях и обновлениях приложения.</li>
-            <li>Обеспечение безопасности вашего аккаунта и приложения в целом.</li>
+            <li>Providing personalized health recommendations.</li>
+            <li>Analyzing and improving app service quality.</li>
+            <li>Sending notifications about new features and app updates.</li>
+            <li>Ensuring the security of your account and the app overall.</li>
           </ul>
 
-          <h3>Как мы защищаем ваши данные?</h3>
+          <h3>How do we protect your data?</h3>
           <p>
-            Мы предпринимаем все необходимые меры для защиты ваших данных, включая:
+            We take all necessary measures to protect your data, including:
           </p>
           <ul>
-            <li><strong>Шифрование:</strong> Все данные передаются с использованием надежных протоколов шифрования (например, HTTPS).</li>
-            <li><strong>Ограниченный доступ:</strong> Только авторизованные пользователи и сотрудники могут получить доступ к вашим данным.</li>
-            <li><strong>Регулярные проверки безопасности:</strong> Мы регулярно проводим проверки для защиты от утечек и атак.</li>
+            <li><strong>Encryption:</strong> All data is transmitted using secure encryption protocols (e.g., HTTPS).</li>
+            <li><strong>Restricted access:</strong> Only authorized users and staff can access your data.</li>
+            <li><strong>Regular security audits:</strong> We regularly conduct audits to protect against leaks and attacks.</li>
           </ul>
 
-          <h3>Как долго мы храним ваши данные?</h3>
+          <h3>How long do we keep your data?</h3>
           <p>
-            Мы храним ваши данные в течение времени, необходимого для выполнения целей, для которых они были собраны, если иное не предусмотрено законодательством.
+            We retain your data for as long as necessary to fulfill the purposes for which it was collected, unless otherwise required by law.
           </p>
 
-          <h3>Как вы можете контролировать свои данные?</h3>
+          <h3>How can you control your data?</h3>
           <ul>
-            <li>Вы можете в любое время обновить свои персональные данные в настройках приложения.</li>
-            <li>Вы можете удалить свой аккаунт, что приведет к удалению всех ваших данных из системы.</li>
-            <li>Вы можете связаться с нами для запроса на удаление или изменения ваших данных.</li>
+            <li>You can update your personal data anytime in the app settings.</li>
+            <li>You can delete your account, which will remove all your data from the system.</li>
+            <li>You can contact us to request deletion or modification of your data.</li>
           </ul>
         </div>
       )}
