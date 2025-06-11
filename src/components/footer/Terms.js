@@ -1,82 +1,78 @@
-// Terms.js
 import React, { useState } from 'react';
 
 const Terms = () => {
-  const [isExpanded, setIsExpanded] = useState(false); // Состояние для развернутого контента
+  const [isExpanded, setIsExpanded] = useState(false); // State for expanded content
 
   const toggleContent = () => {
-    setIsExpanded(!isExpanded); // Переключение состояния
+    setIsExpanded(!isExpanded); // Toggle state
   };
 
   return (
     <div className="modal-content">
-      <h2>Условия использования</h2>
+      <h2>Terms of Use</h2>
       <p>
-        Данное приложение предоставляет пользователям доступ к функционалу для отслеживания здоровья и физической активности.
-        Используя наше приложение, вы соглашаетесь с условиями, изложенными в этих Условиях использования.
+        This application provides users with access to features for tracking health and physical activity.
+        By using our application, you agree to the terms set forth in these Terms of Use.
       </p>
       
       <p>
-        Мы настоятельно рекомендуем вам внимательно прочитать данные условия перед использованием приложения.
+        We strongly recommend that you carefully read these terms before using the application.
       </p>
 
-      {/* Кнопка для разворачивания/сворачивания дополнительной информации */}
+      {/* Button to expand/collapse additional information */}
       <button onClick={toggleContent} className="expand-btn">
-        {isExpanded ? 'Свернуть информацию' : 'Развернуть подробности'}
+        {isExpanded ? 'Collapse Information' : 'Expand Details'}
       </button>
 
       {isExpanded && (
         <div className="expanded-content">
           <div className="scrollable-content">
-            <h3>1. Общие положения</h3>
+            <h3>1. General Provisions</h3>
             <p>
-              Приложение предназначено исключительно для личного использования. Вы обязуетесь использовать его в рамках законных
-              целей и соблюдать все применимые законы и нормативные акты.
+              The application is intended for personal use only. You agree to use it within legal purposes
+              and comply with all applicable laws and regulations.
             </p>
 
-            <h3>2. Регистрация и учетная запись</h3>
+            <h3>2. Registration and Account</h3>
             <p>
-              Для использования некоторых функций приложения вам может понадобиться создать учетную запись. Вы обязуетесь предоставлять
-              точную и актуальную информацию при регистрации и поддерживать вашу учетную запись в актуальном состоянии.
+              To use certain features of the application, you may need to create an account. You agree to provide
+              accurate and up-to-date information during registration and keep your account information current.
             </p>
 
-            <h3>3. Ответственность пользователя</h3>
+            <h3>3. User Responsibility</h3>
             <p>
-              Вы несете полную ответственность за использование приложения. Приложение не несет ответственности за любые ошибки,
-              проблемы со здоровьем или травмы, которые могут возникнуть в результате использования информации, предоставленной
-              в приложении.
+              You are fully responsible for your use of the application. The application is not responsible for any errors,
+              health issues, or injuries that may result from using the information provided in the application.
             </p>
 
-            <h3>4. Ограничение ответственности</h3>
+            <h3>4. Limitation of Liability</h3>
             <p>
-              Приложение предоставляется "как есть". Мы не гарантируем безошибочную работу приложения или отсутствие технических
-              проблем. Мы не несем ответственности за ущерб, который может быть причинен в случае ошибки, сбоя или другого
-              сбоя в работе приложения.
+              The application is provided "as is". We do not guarantee error-free operation or absence of technical issues.
+              We are not liable for any damage that may occur due to errors, failures, or other malfunctions in the application.
             </p>
 
-            <h3>5. Защита данных</h3>
+            <h3>5. Data Protection</h3>
             <p>
-              Мы придерживаемся строгой политики конфиденциальности в отношении ваших данных. Мы не будем передавать ваши данные третьим
-              лицам без вашего согласия, за исключением случаев, когда это необходимо для выполнения законных требований.
+              We adhere to a strict privacy policy regarding your data. We will not share your data with third parties without your consent,
+              except when required to comply with legal obligations.
             </p>
 
-            <h3>6. Изменения в Условиях использования</h3>
+            <h3>6. Changes to the Terms of Use</h3>
             <p>
-              Мы можем время от времени обновлять Условия использования, и изменения будут вступать в силу с момента их публикации.
-              Мы уведомим вас о существенных изменениях через уведомления в приложении.
+              We may update the Terms of Use from time to time, and changes will take effect upon their publication.
+              We will notify you of significant changes through in-app notifications.
             </p>
 
-            <h3>7. Прекращение использования</h3>
+            <h3>7. Termination of Use</h3>
             <p>
-              Мы оставляем за собой право приостановить или прекратить доступ к приложению в любой момент без предварительного уведомления
-              в случае нарушения условий использования или других обстоятельств, которые мы сочтем необходимыми.
+              We reserve the right to suspend or terminate access to the application at any time without prior notice
+              if you violate the Terms of Use or under other circumstances we deem necessary.
             </p>
 
-            <h3>8. Заключительные положения</h3>
+            <h3>8. Final Provisions</h3>
             <p>
-              В случае возникновения споров между вами и нами, они будут решаться в соответствии с законодательством вашего региона.
-              Если какое-либо положение этих Условий использования будет признано недействительным, это не повлияет на действительность
-              остальных положений.
+              In case of disputes between you and us, they will be resolved according to the laws of your jurisdiction.
+              If any provision of these Terms of Use is found invalid, it will not affect the validity of the remaining provisions.
             </p>
           </div>
         </div>
