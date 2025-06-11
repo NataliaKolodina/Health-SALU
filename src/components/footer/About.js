@@ -1,53 +1,35 @@
-// About.js
-import React, { useState } from 'react';
+<h2>About the App</h2>
+<p>
+  Welcome to our health tracking app! We created this application
+  to help you monitor your health status, analyze physical activity,
+  nutrition, and overall well-being.
+</p>
 
-const About = () => {
-  const [isExpanded, setIsExpanded] = useState(false); // Состояние для управления развернутым контентом
+<p>
+  We use modern technologies to provide you with accurate and useful data
+  that will help you make informed decisions in your daily life.
+</p>
 
-  const toggleContent = () => {
-    setIsExpanded(!isExpanded); // Переключение состояния
-  };
+<button onClick={toggleContent} className="expand-btn">
+  {isExpanded ? 'Collapse Details' : 'Expand Details'}
+</button>
 
-  return (
-    <div className="modal-content">
-      <h2>О приложении</h2>
-      <p>
-        Добро пожаловать в наше приложение для контроля здоровья! Мы создали это приложение с
-        целью помочь вам следить за вашим состоянием здоровья, анализировать физическую активность,
-        питание и общее самочувствие.
-      </p>
-      
-      <p>
-        Мы используем современные технологии, чтобы дать вам точные и полезные данные, которые
-        помогут вам принимать правильные решения в повседневной жизни.
-      </p>
+{isExpanded && (
+  <div className="expanded-content">
+    <h3>What We Offer:</h3>
+    <ul>
+      <li><strong>Personalized Health Plan:</strong> Create a plan based on your goals and preferences.</li>
+      <li><strong>Nutrition Tracking:</strong> Easily log and analyze your diet to maintain balance.</li>
+      <li><strong>Physical Activity:</strong> Motivate yourself to achieve new milestones in workouts and sports.</li>
+      <li><strong>Sleep Monitoring:</strong> Improve your sleep quality with recommendations and data insights.</li>
+      <li><strong>Mental Well-being:</strong> Assess your emotional state and receive tips to boost your mood.</li>
+    </ul>
 
-      {/* Кнопка для разворачивания/сворачивания дополнительной информации */}
-      <button onClick={toggleContent} className="expand-btn">
-        {isExpanded ? 'Свернуть информацию' : 'Развернуть подробности'}
-      </button>
-
-      {isExpanded && (
-        <div className="expanded-content">
-          <h3>Что мы предлагаем:</h3>
-          <ul>
-            <li><strong>Персонализированный план здоровья:</strong> Создайте план на основе ваших целей и предпочтений.</li>
-            <li><strong>Отслеживание питания:</strong> Легко записывайте и анализируйте ваше питание, чтобы поддерживать баланс.</li>
-            <li><strong>Физическая активность:</strong> Мотивируйте себя достигать новых результатов в тренировках и спорте.</li>
-            <li><strong>Мониторинг сна:</strong> Улучшайте качество сна с помощью рекомендаций и данных.</li>
-            <li><strong>Психологическое благополучие:</strong> Оценивайте ваше эмоциональное состояние и получайте советы по улучшению настроения.</li>
-          </ul>
-
-          <h3>Наши цели:</h3>
-          <p>
-            Мы стремимся предоставить вам удобные и полезные инструменты для того, чтобы вы могли
-            следить за своим здоровьем, поддерживать его в хорошем состоянии и улучшать качество жизни.
-            В будущем мы планируем добавить еще больше функций для вашего удобства и благополучия.
-          </p>
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default About;
+    <h3>Our Goals:</h3>
+    <p>
+      We strive to provide you with convenient and useful tools so you can
+      monitor your health, keep it in good condition, and improve your quality of life.
+      In the future, we plan to add even more features for your convenience and well-being.
+    </p>
+  </div>
+)}
