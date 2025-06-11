@@ -3,26 +3,26 @@ import outwork from "../../json/outwork.json";
 
 const OutworkVideo = () => {
   const [randomVideos, setRandomVideos] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для модального окна
-  const [selectedVideo, setSelectedVideo] = useState(null); // Состояние для выбранного видео
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal window state
+  const [selectedVideo, setSelectedVideo] = useState(null); // Selected video state
 
   useEffect(() => {
-    // Функция для выбора 6 случайных видео
+    // Function to select 6 random videos
     const getRandomVideos = () => {
-      const shuffledVideos = [...outwork].sort(() => 0.6 - Math.random()); // Перемешиваем массив видео
-      return shuffledVideos.slice(0, 6); // Берем первые 6 видео
+      const shuffledVideos = [...outwork].sort(() => 0.6 - Math.random()); // Shuffle videos array
+      return shuffledVideos.slice(0, 6); // Take first 6 videos
     };
 
     setRandomVideos(getRandomVideos());
   }, []);
 
-  // Функция для открытия модального окна с видео
+  // Function to open modal window with video
   const openModal = (video) => {
     setSelectedVideo(video);
     setIsModalOpen(true);
   };
 
-  // Функция для закрытия модального окна
+  // Function to close modal window
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedVideo(null);
@@ -33,14 +33,14 @@ const OutworkVideo = () => {
       <div className="site__list tablet-center">
         {randomVideos.map((video) => (
           <div className="video__item" key={video.id}>
-            {/* Кнопка "Посмотреть", расположенная в центре видео */}
+            {/* "Watch" button centered over video */}
             <button
-              className=" site__btn video__play "
+              className="site__btn video__play"
               onClick={() => openModal(video)}
             >
-              Посмотреть
+              Watch
             </button>
-            {/* Видео */}
+            {/* Video */}
             <iframe
               width="560"
               height="315"
@@ -55,7 +55,7 @@ const OutworkVideo = () => {
         ))}
       </div>
 
-      {/* Модальное окно */}
+      {/* Modal window */}
       {isModalOpen && selectedVideo && (
         <div className="video__modal">
           <div className="video__modal-video">
@@ -67,7 +67,7 @@ const OutworkVideo = () => {
                 className="site__btn video__modal-btn"
                 onClick={closeModal}
               >
-                Закрыть
+                Close
               </button>
             </div>
             <iframe
