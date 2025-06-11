@@ -9,32 +9,31 @@ const YogaAtHome = () => {
     <>
       <Header />
       <div className='site__size'>
-      <div className='container site__space'>
-      <h1 className='site__heading'>Йога дома</h1>
-      <div className='btn__foot'>
-              {/* Кнопка назад */}
+        <div className='container site__space'>
+          <h1 className='site__heading'>Yoga at Home</h1>
+          <div className='btn__foot'>
+            {/* Back button */}
             <Link to="/sport">
-              <button className='site__btn' >Назад</button>
+              <button className='site__btn'>Back</button>
             </Link>
-            
-            </div>
-    
-      <h2 className='site__subtitle site__text-center'>Как организовать занятие йогой дома?</h2>
-      <p className="site__text">
-        Занятия йогой дома могут быть такими же эффективными, как и в студии, если вы создадите комфортную атмосферу и будете следовать нескольким простым рекомендациям:
-      </p>
-      <ul>
-        <li className="site__text"><strong>Создайте пространство</strong>: Найдите тихое место, где вас не будут отвлекать. Расстелите коврик и уберите лишние предметы.</li>
-        <li className="site__text"><strong>Используйте комфортную одежду</strong>: Одевайте удобную одежду, которая не будет стеснять движений.</li>
-        <li className="site__text"><strong>Установите время</strong>: Найдите время в своем расписании для регулярных занятий йогой. Это может быть утром перед работой или вечером после рабочего дня.</li>
-        <li className="site__text"><strong>Не спешите</strong>: Не торопитесь выполнять асаны. Практикуйте медленно, внимательно, слушая свое тело.</li>
-        <li className="site__text"><strong>Используйте онлайн-ресурсы</strong>: Вы можете найти множество видеоуроков для различных уровней подготовки на YouTube.</li>
-        <li className="site__text"><strong>Завершайте практику расслаблением</strong>: Заканчивайте каждое занятие медитацией или шавасаной для восстановления.</li>
-      </ul>
+          </div>
 
-      <h2 className='tablet-center site__subtitle site__subtitle-sport site__text-center'>6 лучших видеоуроков по йоге для дома</h2>
-      <YogaVideo />
-      </div>
+          <h2 className='site__subtitle site__text-center'>How to organize yoga practice at home?</h2>
+          <p className="site__text">
+            Practicing yoga at home can be just as effective as in a studio if you create a comfortable atmosphere and follow a few simple recommendations:
+          </p>
+          <ul>
+            <li className="site__text"><strong>Create a space</strong>: Find a quiet place where you won't be disturbed. Lay out a mat and remove unnecessary items.</li>
+            <li className="site__text"><strong>Wear comfortable clothes</strong>: Wear clothing that doesn't restrict your movements.</li>
+            <li className="site__text"><strong>Set a time</strong>: Find time in your schedule for regular yoga practice. It could be in the morning before work or in the evening after your workday.</li>
+            <li className="site__text"><strong>Don't rush</strong>: Don't hurry through the asanas. Practice slowly and mindfully, listening to your body.</li>
+            <li className="site__text"><strong>Use online resources</strong>: You can find plenty of video lessons for different skill levels on YouTube.</li>
+            <li className="site__text"><strong>End with relaxation</strong>: Finish each session with meditation or savasana to restore yourself.</li>
+          </ul>
+
+          <h2 className='tablet-center site__subtitle site__subtitle-sport site__text-center'>6 best yoga video lessons for home practice</h2>
+          <YogaVideo />
+        </div>
       </div>
       <Footer />
     </>
@@ -42,6 +41,3 @@ const YogaAtHome = () => {
 };
 
 export default YogaAtHome;
-
-
-
