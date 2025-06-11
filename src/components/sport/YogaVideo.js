@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
-import yoga from "../../json/yoga.json"; // Импортируем JSON файл с видео
+import yoga from "../../json/yoga.json"; // Import JSON file with videos
 
 const YogaVideo = () => {
   const [randomVideos, setRandomVideos] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для модального окна
-  const [selectedVideo, setSelectedVideo] = useState(null); // Состояние для выбранного видео
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal window
+  const [selectedVideo, setSelectedVideo] = useState(null); // State for selected video
 
   useEffect(() => {
-    // Функция для выбора 6 случайных видео
+    // Function to select 6 random videos
     const getRandomVideos = () => {
-      const shuffledVideos = [...yoga].sort(() => 0.6 - Math.random()); // Перемешиваем массив видео
-      return shuffledVideos.slice(0, 6); // Берем первые 6 видео
+      const shuffledVideos = [...yoga].sort(() => 0.6 - Math.random()); // Shuffle the video array
+      return shuffledVideos.slice(0, 6); // Take first 6 videos
     };
 
     setRandomVideos(getRandomVideos());
   }, []);
 
-  // Функция для открытия модального окна с видео
+  // Function to open modal window with video
   const openModal = (video) => {
     setSelectedVideo(video);
     setIsModalOpen(true);
   };
 
-  // Функция для закрытия модального окна
+  // Function to close modal window
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedVideo(null);
@@ -33,14 +33,14 @@ const YogaVideo = () => {
       <div className="site__list tablet-center">
         {randomVideos.map((video) => (
           <div className="video__item" key={video.id}>
-            {/* Кнопка "Посмотреть", расположенная в центре видео */}
+            {/* "Watch" button centered on video */}
             <button
-              className=" site__btn video__play"
+              className="site__btn video__play"
               onClick={() => openModal(video)}
             >
-              Посмотреть
+              Watch
             </button>
-            {/* Видео */}
+            {/* Video */}
             <iframe
               width="560"
               height="315"
@@ -55,7 +55,7 @@ const YogaVideo = () => {
         ))}
       </div>
 
-      {/* Модальное окно */}
+      {/* Modal window */}
       {isModalOpen && selectedVideo && (
         <div className="video__modal">
           <div className="video__modal-video">
@@ -67,7 +67,7 @@ const YogaVideo = () => {
                 className="site__btn video__modal-btn"
                 onClick={closeModal}
               >
-                Закрыть
+                Close
               </button>
             </div>
             <iframe
