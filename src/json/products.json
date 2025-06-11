@@ -1,267 +1,250 @@
 {
-    "categories": [
-      {
-        "category": "Фрукты",
-        "products": [
-          {
-            "name": "Яблоки",
-            "description": "Яблоки содержат много витамина C, клетчатки и антиоксидантов, что помогает укрепить иммунную систему и улучшить пищеварение.",
-            "dailyRecommendation": "1-2 яблока в день",
-            "image": "/img/apple.jpg"
-          },
-          {
-            "name": "Бананы",
-            "description": "Бананы богаты калием, который помогает поддерживать нормальное давление, а также содержат витамины B6 и C.",
-            "dailyRecommendation": "1 банан в день",
-            "image": "/img/banan.webp"
-          },
-          {
-            "name": "Груши",
-            "description": "Груши содержат клетчатку, витамины C и K, которые помогают улучшить пищеварение, поддерживают здоровье кожи и укрепляют иммунную систему.",
-            "dailyRecommendation": "1-2 груши",
-            "image": "/img/pear.jpg"
-          },
-          {
-            "name": "Апельсины",
-            "description": "Апельсины богаты витамином C, который укрепляет иммунитет, улучшает здоровье кожи и способствует усвоению железа, а также обладают антиоксидантными свойствами.",
-            "dailyRecommendation": "1 апельсин",
-            "image": "/img/orange.webp"
-          },
-          {
-            "name": "Киви",
-            "description": "Киви является отличным источником витаминов C и E, а также клетчатки, которые способствуют улучшению иммунной функции, поддержанию здоровья кожи и нормализации пищеварения.",
-            "dailyRecommendation": "1-2 киви",
-            "image": "/img/kiwi.jpg"
-          },
-          {
-            "name": "Гранат",
-            "description": "Гранат содержит мощные антиоксиданты, витамины C и K, которые поддерживают здоровье сердца, улучшают обмен веществ и помогают снизить воспаления.",
-            "dailyRecommendation": "1 гранат",
-            "image": "/img/granat.webp"
-          },
-          {
-            "name": "Черника",
-            "description": "Черника богата антиоксидантами и витамином C, которые способствуют улучшению памяти, укрепляют иммунную систему и поддерживают здоровье глаз.",
-            "dailyRecommendation": "100-150 граммов",
-            "image": "/img/blueberries.jpg"
-          },
-          {
-            "name": "Персики",
-            "description": "Персики являются отличным источником витаминов A и C, которые поддерживают здоровье кожи, улучшат зрение и укрепляют иммунитет.",
-            "dailyRecommendation": "1-2 персика",
-            "image": "/img/peach.jpg"
-          },
-          {
-            "name": "Арбуз",
-            "description": "Арбуз содержит большое количество воды, витамина C и антиоксидантов, которые помогают увлажнить организм, поддерживать здоровье сердца и улучшать обмен веществ.",
-            "dailyRecommendation": "300-400 граммов",
-            "image": "/img/watermelon.webp"
-          }
-        ]
-      },
-      {
-        "category": "Овощи",
-        "products": [
-          {
-            "name": "Шпинат",
-            "description": "Шпинат богат витаминами A, C и K, а также содержит антиоксиданты, которые поддерживают здоровье глаз и кожи.",
-            "dailyRecommendation": "1-2 чашки в день",
-            "image": "/img/shpinat.webp"
-          },
-          {
-            "name": "Морковь",
-            "description": "Морковь — отличный источник витамина A, который важен для здоровья глаз и иммунной системы.",
-            "dailyRecommendation": "1 морковь в день",
-            "image": "img/carrot.webp"
-          },
-          {
-            "name": "Брокколи",
-            "description": "Брокколи содержит витамины C, K и A, а также антиоксиданты, которые помогают поддерживать иммунитет и здоровье костей.",
-            "dailyRecommendation": "200-300 граммов",
-            "image": "/img/broccoli.jpg"
-          },
-          {
-            "name": "Капуста",
-            "description": "Капуста содержит витамины C и K, а также фолиевую кислоту и клетчатку, которые поддерживают здоровье сердца, укрепляют иммунитет и улучшают пищеварение.",
-            "dailyRecommendation": "200-250 граммов",
-            "image": "img/cabbage.jpeg"
-          },
-          {
-            "name": "Помидоры",
-            "description": "Помидоры богаты витамином C и ликопеном, мощным антиоксидантом, который помогает предотвратить болезни сердца и рак.",
-            "dailyRecommendation": "1-2 средних помидора",
-            "image": "/img/tomato.jpg"
-          },
-          {
-            "name": "Перец болгарский",
-            "description": "Перец болгарский содержит витамин C и бета-каротин, которые укрепляют иммунную систему, улучшают здоровье кожи и поддерживают зрение.",
-            "dailyRecommendation": "1-2 штуки",
-            "image": "/img/peper.webp"
-          },
-          {
-            "name": "Тыква",
-            "description": "Тыква богата витаминами A и C, а также калием, который помогает поддерживать здоровое давление и улучшает обмен веществ.",
-            "dailyRecommendation": "150-200 граммов",
-            "image": "/img/pumpkin.jpg"
-          },
-          {
-            "name": "Цукини",
-            "description": "Цукини низкокалорийный овощ, содержащий витамины A и C, а также калий, который поддерживает здоровье сердца и нормализует давление.",
-            "dailyRecommendation": "150-200 граммов",
-            "image": "/img/zucchini.webp"
-          },
-          {
-            "name": "Фасоль зелёная",
-            "description": "Зелёная фасоль содержит клетчатку, витамины C и K, а также фолиевую кислоту, которые помогают улучшить пищеварение и укрепляют иммунную систему.",
-            "dailyRecommendation": "150-200 граммов",
-            "image": "/img/green bean.webp"
-          },
-          {
-            "name": "Свекла",
-            "description": "Свекла способствует улучшению кровообращения, поддерживает здоровье печени и помогает нормализовать уровень гемоглобина благодаря высокому содержанию железа.",
-            "dailyRecommendation": "150-200 граммов",
-            "image": "/img/beet.jpg"
-          }
-        ]
-      },
-        {
-        "category": "Орехи и семена",
-        "products": [
-          {
-            "name": "Грецкие орехи",
-            "description": "Грецкие орехи богаты омега-3 жирными кислотами, антиоксидантами и витаминами, которые поддерживают здоровье сердца, улучшают память и укрепляют иммунную систему.",
-            "dailyRecommendation": "20-30 граммов",
-            "image": "/img/Walnuts.webp"
-          },
-          {
-            "name": "Миндаль",
-            "description": "Миндаль содержит витамины E и B2, магний и клетчатку, которые способствуют улучшению здоровья кожи, укрепляют кости и помогают снизить уровень холестерина.",
-            "dailyRecommendation": "20-30 граммов",
-            "image": "/img/Almond.jpg"
-          },
-          {
-            "name": "Кешью",
-            "description": "Кешью полезны для поддержания здорового уровня сахара в крови, улучшают здоровье костей и кожи благодаря высокому содержанию магния и меди.",
-            "dailyRecommendation": "20-25 граммов",
-            "image": "/img/Cashews.jpg"
-          },
-          {
-            "name": "Семена чиа",
-            "description": "Семена чиа богаты омега-3 жирными кислотами, клетчаткой и антиоксидантами, которые поддерживают работу сердца, улучшают пищеварение и нормализуют уровень сахара в крови.",
-            "dailyRecommendation": "15-20 граммов",
-            "image": "/img/Chia Seeds.jpg"
-          },
-          {
-            "name": "Семена льна",
-            "description": "Семена льна — отличный источник омега-3, клетчатки и антиоксидантов, которые помогают улучшить пищеварение, снизить воспаления и поддерживают здоровье сердца.",
-            "dailyRecommendation": "15-20 граммов",
-            "image": "/img/Flax seeds.webp"
-          },
-          {
-            "name": "Фисташки",
-            "description": "Фисташки содержат антиоксиданты, витамины B6 и K, которые поддерживают здоровье сердечно-сосудистой системы, улучшают уровень холестерина и снижают риск хронических заболеваний.",
-            "dailyRecommendation": "20-30 граммов",
-            "image": "/img/Pistachios.webp"
-          },
-          {
-            "name": "Семена тыквы",
-            "description": "Семена тыквы богаты магнием, цинком и антиоксидантами, которые поддерживают здоровье кожи, помогают укрепить иммунную систему и улучшают работу сердца.",
-            "dailyRecommendation": "30 граммов",
-            "image": "/img/Pumpkin Seeds.jpeg"
-          },
-          {
-            "name": "Кедровые орехи",
-            "description": "Кедровые орехи содержат витамины B и E, магний и белки, которые поддерживают иммунитет, укрепляют кости и способствуют нормализации уровня сахара в крови.",
-            "dailyRecommendation": "20-30 граммов",
-            "image": "/img/Pine nuts.jpg"
-          },
-          {
-            "name": "Семена подсолнечника",
-            "description": "Семена подсолнечника — источник витамина E, магния и антиоксидантов, которые помогают улучшить здоровье кожи, поддерживать нормальный уровень холестерина и способствуют нормализации артериального давления.",
-            "dailyRecommendation": "30-40 граммов",
-            "image": "/img/Sunflower seeds.jpg"
-          },
-          {
-            "name": "Пекан",
-            "description": "Пекан богат мононенасыщенными жирами и антиоксидантами, которые помогают поддерживать здоровье сердца, улучшают уровень холестерина и нормализуют обмен веществ.",
-            "dailyRecommendation": "20-30 граммов",
-            "image": "/img/Pecans.webp"
-          }
-        ]
-      
-      },
-      {
-      "category": "Мясо",
+  "categories": [
+    {
+      "category": "Fruits",
       "products": [
         {
-          "name": "Куриное филе",
-          "description": "Куриное филе — это отличный источник белка, низкокалорийное и богатое витаминами группы B. Оно способствует росту и восстановлению мышц, поддерживает нормальный уровень энергии и укрепляет иммунную систему.",
-          "dailyRecommendation": "100-150 граммов",
-            "image": "/img/Chicken.jpg"
+          "name": "Apples",
+          "description": "Apples are rich in vitamin C, fiber, and antioxidants, which help strengthen the immune system and improve digestion.",
+          "dailyRecommendation": "1-2 apples per day",
+          "image": "/img/apple.jpg"
         },
         {
-          "name": "Говядина (постная)",
-          "description": "Говядина является ценным источником высококачественного белка, железа и витаминов группы B, включая витамин B12. Она помогает поддерживать здоровье крови, нормализует уровень энергии и способствует росту мышечной массы.",
-          "dailyRecommendation": "100-150 граммов",
-            "image": "/img/Beef.webp"
+          "name": "Bananas",
+          "description": "Bananas are high in potassium, which helps maintain normal blood pressure, and also contain vitamins B6 and C.",
+          "dailyRecommendation": "1 banana per day",
+          "image": "/img/banan.webp"
         },
         {
-          "name": "Индейка",
-          "description": "Мясо индейки низкокалорийное, но при этом богатое белком, витаминами группы B и селеном. Оно поддерживает здоровье сердца, укрепляет иммунитет и помогает в восстановлении тканей после физической активности.",
-          "dailyRecommendation": "100-150 граммов",
-            "image": "/img/Turkey.webp"
+          "name": "Pears",
+          "description": "Pears contain fiber, vitamins C and K, which help improve digestion, support skin health, and strengthen the immune system.",
+          "dailyRecommendation": "1-2 pears",
+          "image": "/img/pear.jpg"
         },
         {
-          "name": "Кролик",
-          "description": "Мясо кролика содержит много белка и мало жира. Оно богато фосфором и витаминами группы B, что способствует нормализации обмена веществ, улучшению работы нервной системы и поддержанию здоровья костей.",
-          "dailyRecommendation": "100-150 граммов",
-            "image": "/img/Rabbit.jpg"
+          "name": "Oranges",
+          "description": "Oranges are rich in vitamin C, which boosts immunity, improves skin health, aids iron absorption, and have antioxidant properties.",
+          "dailyRecommendation": "1 orange",
+          "image": "/img/orange.webp"
         },
         {
-          "name": "Баранина (постная)",
-          "description": "Постная баранина содержит много белка, цинка, железа и витаминов группы B. Она помогает в восстановлении тканей, улучшает обмен веществ и поддерживает здоровье крови.",
-          "dailyRecommendation": "100-150 граммов",
-            "image": "/img/Sheepmeat.jpg"
+          "name": "Kiwis",
+          "description": "Kiwis are an excellent source of vitamins C and E, as well as fiber, which promote immune function, skin health, and digestion.",
+          "dailyRecommendation": "1-2 kiwis",
+          "image": "/img/kiwi.jpg"
+        },
+        {
+          "name": "Pomegranate",
+          "description": "Pomegranate contains powerful antioxidants, vitamins C and K, which support heart health, improve metabolism, and help reduce inflammation.",
+          "dailyRecommendation": "1 pomegranate",
+          "image": "/img/granat.webp"
+        },
+        {
+          "name": "Blueberries",
+          "description": "Blueberries are rich in antioxidants and vitamin C, which enhance memory, strengthen the immune system, and support eye health.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/blueberries.jpg"
+        },
+        {
+          "name": "Peaches",
+          "description": "Peaches are an excellent source of vitamins A and C, which support skin health, improve vision, and boost immunity.",
+          "dailyRecommendation": "1-2 peaches",
+          "image": "/img/peach.jpg"
+        },
+        {
+          "name": "Watermelon",
+          "description": "Watermelon contains a high amount of water, vitamin C, and antioxidants, which help hydrate the body, support heart health, and improve metabolism.",
+          "dailyRecommendation": "300-400 grams",
+          "image": "/img/watermelon.webp"
         }
       ]
-    
     },
     {
-    "category": "Масло",
-    "products": [
-      {
-        "name": "Оливковое масло",
-        "description": "Оливковое масло является источником мононенасыщенных жиров, которые полезны для сердечно-сосудистой системы. Оно также богато антиоксидантами (витамины E и K) и обладает противовоспалительными свойствами. Регулярное потребление оливкового масла помогает улучшить уровень холестерина и поддерживает здоровье кожи.",
-        "dailyRecommendation": "1-2 столовые ложки",
-            "image": "/img/Olive oil.webp"
-      },
-      {
-        "name": "Кокосовое масло",
-        "description": "Кокосовое масло содержит среднецепочечные триглицериды (MCT), которые могут улучшить обмен веществ и повысить уровень энергии. Оно также способствует улучшению здоровья кожи и волос, а также обладает антибактериальными свойствами.",
-        "dailyRecommendation": "1-2 столовые ложки",
-            "image": "/img/Coconut oil.jpg"
-      },
-      {
-        "name": "Льняное масло",
-        "description": "Льняное масло богато омега-3 жирными кислотами, которые помогают снизить воспаление, улучшить работу мозга и поддерживать здоровье сердца. Также оно может способствовать улучшению состояния кожи и волос.",
-        "dailyRecommendation": "1-2 столовые ложки",
-            "image": "/img/Linseed oil.webp"
-      },
-      {
-        "name": "Авокадовое масло",
-        "description": "Авокадовое масло — это источник мононенасыщенных жиров и витаминов E и K. Оно помогает снизить уровень холестерина, улучшает здоровье кожи, способствует снижению воспаления и поддерживает нормальную работу сердца.",
-        "dailyRecommendation": "1-2 столовые ложки",
-            "image": "/img/Avocado oil.jpg"
-      },
-      {
-        "name": "Масло грецких орехов",
-        "description": "Масло грецких орехов содержит полезные омега-3 жирные кислоты, которые способствуют улучшению работы мозга, снижают воспаление и помогают поддерживать здоровье сердечно-сосудистой системы. Оно также обладает антиоксидантными свойствами и может улучшать состояние кожи.",
-        "dailyRecommendation": "1 столовая ложка",
-            "image": "/img/Walnut oil.jpg"
-      }
-    ]
-  
-  }
-    ]
-  }
-  
+      "category": "Vegetables",
+      "products": [
+        {
+          "name": "Spinach",
+          "description": "Spinach is rich in vitamins A, C, and K, and contains antioxidants that support eye and skin health.",
+          "dailyRecommendation": "1-2 cups per day",
+          "image": "/img/shpinat.webp"
+        },
+        {
+          "name": "Carrot",
+          "description": "Carrots are an excellent source of vitamin A, important for eye health and the immune system.",
+          "dailyRecommendation": "1 carrot per day",
+          "image": "img/carrot.webp"
+        },
+        {
+          "name": "Broccoli",
+          "description": "Broccoli contains vitamins C, K, and A, as well as antioxidants that help maintain immunity and bone health.",
+          "dailyRecommendation": "200-300 grams",
+          "image": "/img/broccoli.jpg"
+        },
+        {
+          "name": "Cabbage",
+          "description": "Cabbage contains vitamins C and K, folic acid, and fiber, which support heart health, strengthen immunity, and improve digestion.",
+          "dailyRecommendation": "200-250 grams",
+          "image": "img/cabbage.jpeg"
+        },
+        {
+          "name": "Tomatoes",
+          "description": "Tomatoes are rich in vitamin C and lycopene, a powerful antioxidant that helps prevent heart disease and cancer.",
+          "dailyRecommendation": "1-2 medium tomatoes",
+          "image": "/img/tomato.jpg"
+        },
+        {
+          "name": "Bell Pepper",
+          "description": "Bell peppers contain vitamin C and beta-carotene, which strengthen the immune system, improve skin health, and support vision.",
+          "dailyRecommendation": "1-2 pieces",
+          "image": "/img/peper.webp"
+        },
+        {
+          "name": "Pumpkin",
+          "description": "Pumpkin is rich in vitamins A and C, and potassium, which help maintain healthy blood pressure and improve metabolism.",
+          "dailyRecommendation": "150-200 grams",
+          "image": "/img/pumpkin.jpg"
+        },
+        {
+          "name": "Zucchini",
+          "description": "Zucchini is a low-calorie vegetable containing vitamins A and C, and potassium that support heart health and normalize blood pressure.",
+          "dailyRecommendation": "150-200 grams",
+          "image": "/img/zucchini.webp"
+        },
+        {
+          "name": "Green Beans",
+          "description": "Green beans contain fiber, vitamins C and K, and folic acid, which help improve digestion and strengthen the immune system.",
+          "dailyRecommendation": "150-200 grams",
+          "image": "/img/green bean.webp"
+        },
+        {
+          "name": "Beetroot",
+          "description": "Beetroot promotes better blood circulation, supports liver health, and helps normalize hemoglobin levels due to its high iron content.",
+          "dailyRecommendation": "150-200 grams",
+          "image": "/img/beet.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Nuts and Seeds",
+      "products": [
+        {
+          "name": "Walnuts",
+          "description": "Walnuts are rich in omega-3 fatty acids, antioxidants, and vitamins that support heart health, improve memory, and strengthen the immune system.",
+          "dailyRecommendation": "20-30 grams",
+          "image": "/img/Walnuts.webp"
+        },
+        {
+          "name": "Almonds",
+          "description": "Almonds contain vitamins E and B2, magnesium, and fiber, which promote skin health, strengthen bones, and help reduce cholesterol levels.",
+          "dailyRecommendation": "20-30 grams",
+          "image": "/img/Almond.jpg"
+        },
+        {
+          "name": "Cashews",
+          "description": "Cashews help maintain healthy blood sugar levels, improve bone and skin health due to their high magnesium and copper content.",
+          "dailyRecommendation": "20-25 grams",
+          "image": "/img/Cashews.jpg"
+        },
+        {
+          "name": "Chia Seeds",
+          "description": "Chia seeds are rich in omega-3 fatty acids, fiber, and antioxidants that support heart function, improve digestion, and normalize blood sugar levels.",
+          "dailyRecommendation": "15-20 grams",
+          "image": "/img/Chia Seeds.jpg"
+        },
+        {
+          "name": "Flax Seeds",
+          "description": "Flax seeds are an excellent source of omega-3, fiber, and antioxidants that help improve digestion, reduce inflammation, and support heart health.",
+          "dailyRecommendation": "15-20 grams",
+          "image": "/img/Flax seeds.webp"
+        },
+        {
+          "name": "Pistachios",
+          "description": "Pistachios contain antioxidants, vitamins B6 and K, which support cardiovascular health, improve cholesterol levels, and reduce the risk of chronic diseases.",
+          "dailyRecommendation": "20-30 grams",
+          "image": "/img/Pistachios.webp"
+        },
+        {
+          "name": "Pumpkin Seeds",
+          "description": "Pumpkin seeds are rich in magnesium, zinc, and antioxidants, which support skin health, boost the immune system, and improve heart function.",
+          "dailyRecommendation": "30 grams",
+          "image": "/img/Pumpkin Seeds.jpeg"
+        },
+        {
+          "name": "Pine Nuts",
+          "description": "Pine nuts contain vitamins B and E, magnesium, and proteins that support immunity, strengthen bones, and help normalize blood sugar levels.",
+          "dailyRecommendation": "20-30 grams",
+          "image": "/img/Pine nuts.jpg"
+        },
+        {
+          "name": "Sunflower Seeds",
+          "description": "Sunflower seeds are a source of vitamin E, magnesium, and antioxidants, which help improve skin health, maintain normal cholesterol levels, and support blood pressure regulation.",
+          "dailyRecommendation": "30-40 grams",
+          "image": "/img/Sunflower seeds.jpg"
+        },
+        {
+          "name": "Pecans",
+          "description": "Pecans are rich in monounsaturated fats and antioxidants that help support heart health, improve cholesterol levels, and normalize metabolism.",
+          "dailyRecommendation": "20-30 grams",
+          "image": "/img/Pecans.webp"
+        }
+      ]
+    },
+    {
+      "category": "Meat",
+      "products": [
+        {
+          "name": "Chicken Breast",
+          "description": "Chicken breast is an excellent source of protein, low in calories, and rich in B vitamins. It promotes muscle growth and repair, supports normal energy levels, and strengthens the immune system.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/Chicken.jpg"
+        },
+        {
+          "name": "Lean Beef",
+          "description": "Beef is a valuable source of high-quality protein, iron, and B vitamins, including vitamin B12. It helps maintain healthy blood, normalizes energy levels, and promotes muscle growth.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/Beef.webp"
+        },
+        {
+          "name": "Turkey",
+          "description": "Turkey meat is low in calories but rich in protein, B vitamins, and selenium. It supports heart health, strengthens immunity, and aids tissue repair after physical activity.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/Turkey.webp"
+        },
+        {
+          "name": "Rabbit",
+          "description": "Rabbit meat contains a lot of protein and little fat. It is rich in phosphorus and B vitamins, which help normalize metabolism, improve nervous system function, and support bone health.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/Rabbit.jpg"
+        },
+        {
+          "name": "Lean Lamb",
+          "description": "Lean lamb is high in protein, zinc, iron, and B vitamins. It helps tissue repair, improves metabolism, and supports blood health.",
+          "dailyRecommendation": "100-150 grams",
+          "image": "/img/Sheepmeat.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Oils",
+      "products": [
+        {
+          "name": "Olive Oil",
+          "description": "Olive oil is a source of monounsaturated fats beneficial for cardiovascular health. It is also rich in antioxidants (vitamins E and K) and has anti-inflammatory properties. Regular consumption helps improve cholesterol levels and supports skin health.",
+          "dailyRecommendation": "1-2 tablespoons",
+          "image": "/img/Olive oil.webp"
+        },
+        {
+          "name": "Coconut Oil",
+          "description": "Coconut oil contains medium-chain triglycerides (MCTs), which may improve metabolism and boost energy levels. It also promotes skin and hair health and has antibacterial properties.",
+          "dailyRecommendation": "1-2 tablespoons",
+          "image": "/img/Coconut oil.jpg"
+        },
+        {
+          "name": "Flaxseed Oil",
+          "description": "Flaxseed oil is rich in omega-3 fatty acids that help reduce inflammation, improve brain function, and support heart health. It may also enhance the condition of skin and hair.",
+          "dailyRecommendation": "1-2 tablespoons",
+          "image": "/img/Linseed oil.webp"
+        },
+        {
+          "name": "Avocado Oil",
+          "description": "Avocado oil is a source of monounsaturated fats and vitamins E and K. It helps reduce cholesterol levels, improves skin health, reduces inflammation
