@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 
@@ -10,41 +9,35 @@ function HomePage() {
     <>
       <Header />
       <div className="site__size">
-    <div className='container site__space main'>
-      <h1 className='main__heading'>Добро пожаловать в приложение для контроля здоровья!</h1>     
-      <h3 className='main__subheading'>Следите за своим здоровьем и достигайте поставленных целей.</h3>
-     
-      <img className='main__icon' src="img/cardiogramma.gif" alt='cardiogramma' />
+        <div className='container site__space main'>
+          <h1 className='main__heading'>Welcome to the Health Tracking App!</h1>     
+          <h3 className='main__subheading'>Track your health and achieve your goals.</h3>
 
-      
+          <img className='main__icon' src="img/cardiogramma.gif" alt='cardiogram' />
 
-      <h2 className='main__subheading'>Выберите раздел:</h2>
-      <div className='main__nav'>
-        <Link to="/habits">
-          <button className='main__btn main__btn-habits'>Полезные привычки</button>
-        </Link>
-        <Link to="/sleep">
-          <button className='main__btn main__btn-sleep'>Контроль сна</button>
-        </Link>
-        <Link to="/water">
-          <button className='main__btn main__btn-water'>Количество воды в день</button>
-        </Link>
-        <Link to="/sport">
-          <button className='main__btn main__btn-sport'>Спортивные нагрузки</button>
-        </Link>
-        <Link to="/nutrition">
-          <button className='main__btn main__btn-food'>Продукты</button>
-        </Link>
+          <h2 className='main__subheading'>Choose a section:</h2>
+          <div className='main__nav'>
+            <Link to="/habits">
+              <button className='main__btn main__btn-habits'>Healthy Habits</button>
+            </Link>
+            <Link to="/sleep">
+              <button className='main__btn main__btn-sleep'>Sleep Tracking</button>
+            </Link>
+            <Link to="/water">
+              <button className='main__btn main__btn-water'>Daily Water Intake</button>
+            </Link>
+            <Link to="/sport">
+              <button className='main__btn main__btn-sport'>Physical Activity</button>
+            </Link>
+            <Link to="/nutrition">
+              <button className='main__btn main__btn-food'>Nutrition</button>
+            </Link>
+          </div>
+        </div>  
       </div>
-      
-    </div>  
-    </div>
-    <Footer />
+      <Footer />
     </>
-    
   );
 }
 
 export default HomePage;
-
-
