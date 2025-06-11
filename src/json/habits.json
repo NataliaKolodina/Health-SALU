@@ -1,103 +1,102 @@
 [
-    {
-      "id": 1,
-      "title": "Очищение организма (раз в неделю)",
-      "description": "Помогает улучшить работу печени и почек, выводить токсины из организма, а также улучшить пищеварение и нормализовать обмен веществ."
-    },
-    {
-      "id": 2,
-      "title": "Прогулки в лесу или на природе (раз в неделю)",
-      "description": "Прогулки на свежем воздухе помогают снизить уровень стресса, улучшить настроение и способствуют общему оздоровлению организма."
-    },
-    {
-      "id": 3,
-      "title": "День без экрана (раз в неделю)",
-      "description": "Полный день без экранов помогает отдохнуть от гаджетов, улучшает качество сна и снижает уровень стресса."
-    },
-    {
-      "id": 4,
-      "title": "Чтение книг (через день)",
-      "description": "Чтение помогает расслабиться, развивать умственные способности и снизить уровень стресса."
-    },
-    {
-        "id": 5,
-        "title": "День детокса (раз в неделю)",
-        "description": "Пить много воды, избегать тяжелой пищи и сахара. Это помогает организму избавиться от накопленных токсинов и улучшить обмен веществ."
-      },
-      {
-        "id": 6,
-        "title": "День без сахара (раз в неделю)",
-        "description": "Прекращение употребления сахара на день способствует улучшению метаболизма, стабилизации уровня сахара в крови и укреплению иммунной системы."
-      },
-      {
-        "id": 7,
-        "title": "Размышления и медитация на будущее (раз в 3 дня)",
-        "description": "Это практика саморефлексии, которая позволяет вам оценить свой путь и делать осознанные выборы для дальнейшего развития и улучшения жизни."
-      }, 
-      {
-        "id": 8,
-        "title": "Йога или растяжка (через день)",
-        "description": "Йога помогает расслабиться, улучшить гибкость, улучшить осанку и снизить уровень стресса. Проводить ее можно через день."
-      },
-      {
-        "id": 9,
-        "title": "Физическая активность на свежем воздухе (через день)",
-        "description": "Легкая пробежка или занятие спортом на улице улучшает физическое здоровье и повышает уровень энергии."
-      },
-      {
-        "id": 10,
-        "title": "Отдых от социальных сетей (через день)",
-        "description": "Проводите день без социальных сетей для улучшения психоэмоционального состояния и снижения стресса."
-      },
-      {
-        "id": 11,
-        "title": "День без кофеина (раз в неделю)",
-        "description": "Прекращение употребления кофе и других напитков с кофеином способствует улучшению качества сна и нормализации артериального давления."
-      },
-      {
-        "id": 12,
-        "title": "Принятие ванны с эфирными маслами (раз в неделю)",
-        "description": "Это расслабляющая практика, которая помогает снять мышечное напряжение, улучшить циркуляцию крови и расслабить тело."
-      },
-      {
-        "id": 13,
-        "title": "Выполнение самооценки и ведение дневника (раз в неделю)",
-        "description": "Ведение дневника помогает анализировать события прошедшей недели, фиксировать достижения и ставить новые цели."
-      },
-      {
-        "id": 14,
-        "title": "Очищение кожи и лицо-пилинг (раз в неделю)",
-        "description": "Это способствует улучшению состояния кожи, избавлению от мертвых клеток и помогает коже дышать."
-      },
-      {
-        "id": 15,
-        "title": "Работа с мышлением и установка целей на месяц (раз в месяц)",
-        "description": "Это важная привычка для самосовершенствования, которая помогает сфокусироваться на своих целях и их достижении."
-      },
-      {
-        "id": 16,
-        "title": "Обзор личных финансов (раз в месяц)",
-        "description": "Это поможет контролировать свои доходы и расходы, планировать бюджет, откладывать деньги и достигать финансовых целей."
-      },
-      {
-        "id": 17,
-        "title": "Время для хобби (раз в неделю)",
-        "description": "Посвящение времени любимому делу помогает развивать креативность, снижает уровень стресса и повышает удовлетворение от жизни."
-      },
-      {
-        "id": 18,
-        "title": "Прослушивание полезных подкастов или лекций (раз в неделю)",
-        "description": "Это отличный способ расширить кругозор, обучаться новому и улучшать профессиональные навыки."
-      },
-      {
-        "id": 19,
-        "title": "Время для общения с близкими (раз в неделю)",
-        "description": "Создание прочных связей с семьей и друзьями способствует повышению уровня счастья и снижению стресса."
-      },
-      {
-        "id": 20,
-        "title": "День отдыха без работы (раз в неделю)",
-        "description": "Важно время от времени полностью отключаться от работы, чтобы восстановить силы и снизить уровень стресса."
-      }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Body detox (once a week)",
+    "description": "Helps improve liver and kidney function, eliminate toxins from the body, improve digestion, and normalize metabolism."
+  },
+  {
+    "id": 2,
+    "title": "Walks in the forest or nature (once a week)",
+    "description": "Walks in fresh air help reduce stress levels, improve mood, and contribute to overall wellness."
+  },
+  {
+    "id": 3,
+    "title": "Screen-free day (once a week)",
+    "description": "A full day without screens helps rest from gadgets, improves sleep quality, and reduces stress."
+  },
+  {
+    "id": 4,
+    "title": "Reading books (every other day)",
+    "description": "Reading helps relax, develop cognitive abilities, and reduce stress levels."
+  },
+  {
+    "id": 5,
+    "title": "Detox day (once a week)",
+    "description": "Drink plenty of water, avoid heavy foods and sugar. This helps the body get rid of accumulated toxins and improves metabolism."
+  },
+  {
+    "id": 6,
+    "title": "Sugar-free day (once a week)",
+    "description": "Avoiding sugar for a day helps improve metabolism, stabilize blood sugar levels, and strengthen the immune system."
+  },
+  {
+    "id": 7,
+    "title": "Reflection and meditation about the future (once every 3 days)",
+    "description": "This self-reflection practice allows you to evaluate your path and make conscious choices for personal development and life improvement."
+  },
+  {
+    "id": 8,
+    "title": "Yoga or stretching (every other day)",
+    "description": "Yoga helps you relax, improve flexibility and posture, and reduce stress levels. It can be done every other day."
+  },
+  {
+    "id": 9,
+    "title": "Outdoor physical activity (every other day)",
+    "description": "Light jogging or outdoor sports improve physical health and boost energy levels."
+  },
+  {
+    "id": 10,
+    "title": "Social media detox (every other day)",
+    "description": "Spend the day without social media to improve emotional well-being and reduce stress."
+  },
+  {
+    "id": 11,
+    "title": "Caffeine-free day (once a week)",
+    "description": "Avoiding coffee and other caffeinated drinks helps improve sleep quality and normalize blood pressure."
+  },
+  {
+    "id": 12,
+    "title": "Bath with essential oils (once a week)",
+    "description": "This relaxing practice helps relieve muscle tension, improve blood circulation, and relax the body."
+  },
+  {
+    "id": 13,
+    "title": "Self-assessment and journaling (once a week)",
+    "description": "Journaling helps analyze the past week, record achievements, and set new goals."
+  },
+  {
+    "id": 14,
+    "title": "Skin cleansing and face peeling (once a week)",
+    "description": "This improves skin condition, removes dead skin cells, and helps the skin breathe."
+  },
+  {
+    "id": 15,
+    "title": "Mindset work and setting monthly goals (once a month)",
+    "description": "An important habit for self-improvement that helps focus on your goals and achieve them."
+  },
+  {
+    "id": 16,
+    "title": "Personal finance review (once a month)",
+    "description": "Helps control your income and expenses, plan your budget, save money, and reach financial goals."
+  },
+  {
+    "id": 17,
+    "title": "Time for hobbies (once a week)",
+    "description": "Spending time on your favorite activity boosts creativity, reduces stress, and increases life satisfaction."
+  },
+  {
+    "id": 18,
+    "title": "Listening to useful podcasts or lectures (once a week)",
+    "description": "A great way to broaden your horizons, learn new things, and improve professional skills."
+  },
+  {
+    "id": 19,
+    "title": "Quality time with loved ones (once a week)",
+    "description": "Creating strong connections with family and friends increases happiness and reduces stress."
+  },
+  {
+    "id": 20,
+    "title": "Rest day without work (once a week)",
+    "description": "It’s important to completely disconnect from work occasionally to restore energy and lower stress levels."
+  }
+]
