@@ -1,78 +1,81 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 
-Modal.setAppElement("#root"); // Устанавливаем корневой элемент для модалки
+Modal.setAppElement("#root"); // Set root element for modal
 
 function Hello() {
   const [userName, setUserName] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false); // Модалка по умолчанию закрыта
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal closed by default
 
-  // Загружаем имя пользователя из localStorage при монтировании компонента
+  // Load user name from localStorage on mount
   useEffect(() => {
     const storedName = localStorage.getItem("userName");
     if (storedName) {
       setUserName(storedName);
-      setIsModalOpen(false); // Если имя есть, модалка закрывается
+      setIsModalOpen(false); // Close modal if name exists
     }
   }, []);
 
-  // Функция для сохранения имени и закрытия модалки
+  // Save name and close modal
   const handleNameSubmit = (name) => {
     if (name) {
       setUserName(name);
-      localStorage.setItem("userName", name); // Сохраняем имя в localStorage
-      setIsModalOpen(false); // Закрываем модалку
+      localStorage.setItem("userName", name); // Save name in localStorage
+      setIsModalOpen(false); // Close modal
     }
   };
 
-  // Функция для сброса имени и открытия модалки для ввода нового имени
+  // Reset name and open modal for new input
   const handleChangeUser = () => {
-    localStorage.removeItem("userName"); // Удаляем старое имя из localStorage
-    setUserName(""); // Очищаем состояние имени
-    setIsModalOpen(true); // Открываем модалку для ввода нового имени
+    localStorage.removeItem("userName"); // Remove old name from localStorage
+    setUserName(""); // Clear name state
+    setIsModalOpen(true); // Open modal for new name input
   };
 
   return (
     <div className="hello">
-      {/* Приветствие */}
+      {/* Greeting */}
       {userName && (
         <h1 className="hello__heading">
           {userName}
         </h1>
       )}
 
-      {/* Кнопка смены пользователя с подсказкой при наведении */}
+      {/* Change user button with tooltip */}
       <button
         className="id__btn"
         onClick={handleChangeUser}
-        title="Сменить пользователя" // Подсказка при наведении
+        title="Change user" // Tooltip on hover
       >
-      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M493.33-226.67ZM160-160v-100q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17 37.68 0 74.34 5.5 36.66 5.5 73.99 16.17L574-351q-24-4.33-46.93-6.67Q504.14-360 480-360q-56.67 0-111 12.17-54.33 12.16-114.33 41.83-12.34 6.33-20.17 19-7.83 12.67-7.83 27v33.33h266.66V-160H160Zm400 40v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8.67 9 12.83 20 4.17 11 4.17 22t-4.33 22.5q-4.34 11.5-13.28 20.5L683-120H560Zm300-263-37-37 37 37ZM620-180h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19ZM480-480.67q-64 0-108.67-44.66Q326.67-570 326.67-634t44.66-108.67Q416-787.33 480-787.33t108.67 44.66Q633.33-698 633.33-634t-44.66 108.67Q544-480.67 480-480.67Zm0-66.66q36.33 0 61.5-25.17t25.17-61.5q0-36.33-25.17-61.5T480-720.67q-36.33 0-61.5 25.17T393.33-634q0 36.33 25.17 61.5t61.5 25.17Zm0-86.67Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M493.33-226.67ZM160-160v-100q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17 37.68 0 74.34 5.5 36.66 5.5 73.99 16.17L574-351q-24-4.33-46.93-6.67Q504.14-360 480-360q-56.67 0-111 12.17-54.33 12.16-114.33 41.83-12.34 6.33-20.17 19-7.83 12.67-7.83 27v33.33h266.66V-160H160Zm400 40v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8.67 9 12.83 20 4.17 11 4.17 22t-4.33 22.5q-4.34 11.5-13.28 20.5L683-120H560Zm300-263-37-37 37 37ZM620-180h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19ZM480-480.67q-64 0-108.67-44.66Q326.67-570 326.67-634t44.66-108.67Q416-787.33 480-787.33t108.67 44.66Q633.33-698 633.33-634t-44.66 108.67Q544-480.67 480-480.67Zm0-66.66q36.33 0 61.5-25.17t25.17-61.5q0-36.33-25.17-61.5T480-720.67q-36.33 0-61.5 25.17T393.33-634q0 36.33 25.17 61.5t61.5 25.17Zm0-86.67Z"/></svg>
       </button>
 
-      {/* Модальное окно для ввода имени пользователя */}
+      {/* Modal for entering user name */}
       <div>
-      <Modal   portalClassName="header__modal" 
-        isOpen={isModalOpen}
-        onRequestClose={() => setIsModalOpen(false)} // Закрытие модалки
-        contentLabel="Введите имя"
-      >
-        <h2 className="modal__heading site__subtitle ">Введите ваше имя</h2>
-        <div className="site__form site__form-hello">
-        <input className="site__input"
-          type="text"
-          placeholder="Ваше имя"
-          onBlur={(e) => handleNameSubmit(e.target.value)} // Сохраняем имя при уходе с поля
-        />
-        <button className="site__btn"
-          onClick={() =>
-            handleNameSubmit(document.querySelector("input").value)
-          }
+        <Modal
+          portalClassName="header__modal"
+          isOpen={isModalOpen}
+          onRequestClose={() => setIsModalOpen(false)} // Close modal
+          contentLabel="Enter your name"
         >
-          Подтвердить
-        </button>
-        </div>
-      </Modal>
+          <h2 className="modal__heading site__subtitle">Enter your name</h2>
+          <div className="site__form site__form-hello">
+            <input
+              className="site__input"
+              type="text"
+              placeholder="Your name"
+              onBlur={(e) => handleNameSubmit(e.target.value)} // Save name on blur
+            />
+            <button
+              className="site__btn"
+              onClick={() =>
+                handleNameSubmit(document.querySelector("input").value)
+              }
+            >
+              Confirm
+            </button>
+          </div>
+        </Modal>
       </div>
     </div>
   );
