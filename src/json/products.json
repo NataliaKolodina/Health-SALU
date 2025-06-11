@@ -247,4 +247,11 @@
         },
         {
           "name": "Avocado Oil",
-          "description": "Avocado oil is a source of monounsaturated fats and vitamins E and K. It helps reduce cholesterol levels, improves skin health, reduces inflammation
+          "description": "Avocado oil is a source of monounsaturated fats and vitamins E and K. It helps reduce cholesterol levels, improves skin health, reduces inflammation, and supports heart function.",
+          "dailyRecommendation": "1-2 tablespoons",
+          "image": "/img/Avocado oil.webp"
+        }
+      ]
+    }
+  ]
+}
