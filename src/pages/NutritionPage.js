@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 
-// Импортируем данные из JSON-файла
+// Import data from JSON file
 import productData from '../json/products.json';
 
 const NutritionPage = () => {
@@ -11,37 +11,37 @@ const NutritionPage = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Обработка изменения строки поиска
+  // Handle search input change
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  // Фильтрация продуктов по поисковому запросу
+  // Filter products by search query
   const filterProducts = (query) => {
     if (!query) {
       setFilteredCategories(productData.categories);
-      setSelectedProduct(null); // Если запрос пустой, сбрасываем выбранный продукт
+      setSelectedProduct(null); // Reset selected product if query is empty
     } else {
       const filtered = productData.categories.map((category) => ({
         ...category,
         products: category.products.filter((product) =>
-          product.name.toLowerCase().includes(query.toLowerCase()) // Сравниваем с запросом, без учета регистра
+          product.name.toLowerCase().includes(query.toLowerCase())
         ),
       })).filter(category => category.products.length > 0);
 
       setFilteredCategories(filtered);
 
-      // Если хотя бы один продукт найден, сразу показываем первый найденный продукт
+      // Automatically show the first matching product
       const foundProduct = findFirstMatchingProduct(query);
       if (foundProduct) {
-        setSelectedProduct(foundProduct);  // Устанавливаем первый найденный продукт
+        setSelectedProduct(foundProduct);
       } else {
-        setSelectedProduct(null);  // Если ничего не найдено, сбрасываем выбранный продукт
+        setSelectedProduct(null);
       }
     }
   };
 
-  // Функция для нахождения первого продукта, соответствующего запросу
+  // Find first matching product
   const findFirstMatchingProduct = (query) => {
     for (let category of productData.categories) {
       const foundProduct = category.products.find(product => 
@@ -51,36 +51,36 @@ const NutritionPage = () => {
         return foundProduct;
       }
     }
-    return null;  // Если ничего не найдено
+    return null;
   };
 
-  // Открытие/закрытие категории
+  // Toggle category open/close
   const toggleCategory = (index) => {
     if (activeCategory === index) {
-      setActiveCategory(null);  // Закрыть категорию
+      setActiveCategory(null);
     } else {
-      setActiveCategory(index);  // Открыть категорию
-      setSelectedProduct(null);  // При открытии категории скрываем выбранный продукт
+      setActiveCategory(index);
+      setSelectedProduct(null);
     }
   };
 
-  // Открытие информации о продукте
+  // Show product details
   const handleProductClick = (product) => {
-    setSelectedProduct(product);  // Устанавливаем выбранный продукт
+    setSelectedProduct(product);
   };
 
-  // Возврат к категориям и сброс поиска
+  // Back to category view and reset search
   const handleBackToCategories = () => {
-    setSelectedProduct(null);  // Сбрасываем выбранный продукт
-    setSearchQuery('');  // Сбрасываем поле поиска
-    setFilteredCategories(productData.categories);  // Возвращаем все категории
+    setSelectedProduct(null);
+    setSearchQuery('');
+    setFilteredCategories(productData.categories);
   };
 
-  // Очистка поиска
+  // Clear search
   const clearSearch = () => {
     setSearchQuery('');
-    setFilteredCategories(productData.categories);  // Возвращаем все категории
-    setSelectedProduct(null);  // Сбрасываем выбранный продукт
+    setFilteredCategories(productData.categories);
+    setSelectedProduct(null);
   };
 
   return (
@@ -88,43 +88,43 @@ const NutritionPage = () => {
       <Header />
       <div className='site__size'>
         <div className='container site__space'>
-          <h1 className='site__heading'>Зачем важно правильно питаться?</h1>
-          <p className=' site__text site__text-center site__text-margin'>
-            Правильное питание — это основа здорового образа жизни. Важно выбирать полезные продукты, которые
-            помогут поддерживать здоровье, нормализовать обмен веществ и укрепить иммунную систему. Правильный
-            баланс белков, жиров и углеводов способствует долгосрочному здоровью и хорошему самочувствию.
+          <h1 className='site__heading'>Why is healthy eating important?</h1>
+          <p className='site__text site__text-center site__text-margin'>
+            A healthy diet is the foundation of a healthy lifestyle. It’s important to choose nutritious foods that
+            help maintain health, normalize metabolism, and strengthen the immune system. The right balance of
+            proteins, fats, and carbohydrates promotes long-term health and well-being.
           </p>
 
-          {/* Поиск */}
+          {/* Search */}
           <div className='site__form site__form-mobile'>
             <input 
               className='site__input'
               type="text"
               value={searchQuery}
               onChange={handleSearchChange}
-              placeholder="Поиск по продуктам"
+              placeholder="Search products"
             />
             <div className='site__form'>
-            <button className='site__btn food-found__btn' onClick={() => filterProducts(searchQuery)}>Поиск</button>
-            <button className='food-found__btn site__btn' onClick={clearSearch}>Очистить</button>
+              <button className='site__btn food-found__btn' onClick={() => filterProducts(searchQuery)}>Search</button>
+              <button className='food-found__btn site__btn' onClick={clearSearch}>Clear</button>
             </div>
           </div>
 
-          {/* Если выбран продукт, показываем его подробности */}
+          {/* Show product details if selected */}
           {selectedProduct ? (
             <div className="site__list site__list-food">
-              <button className='site__btn' onClick={handleBackToCategories}>Назад к категориям</button>
+              <button className='site__btn' onClick={handleBackToCategories}>Back to categories</button>
               <div className='food__contant site__form-mobile'>
                 <div className='food__text'>
                   <h2 className='site__heading site__heading-food'>{selectedProduct.name}</h2>
                   <p className='site__text site__text-food'>{selectedProduct.description}</p>
-                  <p className='site__text'><strong>Суточная норма:</strong> {selectedProduct.dailyRecommendation}</p>
+                  <p className='site__text'><strong>Daily recommendation:</strong> {selectedProduct.dailyRecommendation}</p>
                 </div>
                 <img className='site__img-food' src={selectedProduct.image} alt={selectedProduct.name} />
               </div>
             </div>
           ) : (
-            // Если категория выбрана или страница поиска, показываем список категорий
+            // Show category list if no product selected
             <div className="category-list">
               {filteredCategories.map((category, index) => (
                 <div key={index}>
@@ -132,7 +132,7 @@ const NutritionPage = () => {
                     {category.category}
                   </h2>
 
-                  {/* Если категория раскрыта, показываем продукты */}
+                  {/* Show products if category is expanded */}
                   {activeCategory === index && (
                     <ul>
                       {category.products.map((product, idx) => (
