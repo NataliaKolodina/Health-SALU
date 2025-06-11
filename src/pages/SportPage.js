@@ -5,16 +5,16 @@ import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 
 function SportPage() {
-  const defaultCity = "Москва"; // Город по умолчанию
+  const defaultCity = "Moscow"; // Default city
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState(defaultCity); // Инициализируем город по умолчанию
+  const [city, setCity] = useState(defaultCity);
   const [error, setError] = useState(null);
 
   const handleCityChange = (e) => {
     setCity(e.target.value);
   };
 
-  // Функция для получения данных о погоде
+  // Function to fetch weather data
   const getWeather = () => {
     if (!city) return;
 
@@ -29,18 +29,17 @@ function SportPage() {
         }
       })
       .catch((error) => {
-        setError("Город не найден");
+        setError("City not found");
         setWeatherData(null);
       });
   };
 
-  // Используем useEffect, чтобы получить данные о погоде при монтировании компонента
   useEffect(() => {
     getWeather();
-  }, []); // Пустой массив зависимостей означает, что эффект будет вызван только при монтировании компонента
+  }, []);
 
   const getSportRecommendation = () => {
-    const temperature = Math.round(weatherData.main.temp - 273.15); // Переводим в Цельсий
+    const temperature = Math.round(weatherData.main.temp - 273.15); // Convert to Celsius
     if (
       temperature < 10 ||
       weatherData.weather[0].description === "heavy intensity rain"
@@ -48,10 +47,10 @@ function SportPage() {
       return (
         <div className="sport__result site__form-result">
           <h3 className="site__heading">
-            Сегодня дождь или холодно, попробуйте йогу дома!
+            It's rainy or cold today, try yoga at home!
           </h3>
           <Link to="/sport/yoga">
-            <button className="main__btn main__btn-yoga">Йога дома</button>
+            <button className="main__btn main__btn-yoga">Home Yoga</button>
           </Link>
         </div>
       );
@@ -59,11 +58,11 @@ function SportPage() {
     return (
       <div className="sport__result site__form-result">
         <h3 className="site__heading">
-          Погода отличная, как насчет утренней зарядки на улице?
+          The weather is great, how about a morning workout outside?
         </h3>
         <Link to="/sport/outwork">
           <button className="main__btn main__btn-outwork">
-            Занятия на свежем воздухе
+            Outdoor Workout
           </button>
         </Link>
       </div>
@@ -75,21 +74,21 @@ function SportPage() {
       <Header />
       <div className="site__size">
         <div className="container site__space">
-          <h2 className="site__heading">Спортивные рекомендации</h2>
+          <h2 className="site__heading">Sport Recommendations</h2>
           <div className="weather-container">
             <h2 className="site__subtitle site__text-center">
-              Выберите Ваш город
+              Choose Your City
             </h2>
             <div className="site__form">
               <input
                 className="site__input"
                 type="text"
-                placeholder="Введите город"
+                placeholder="Enter city"
                 value={city}
                 onChange={handleCityChange}
               />
               <button className="site__btn" onClick={getWeather}>
-                Поиск
+                Search
               </button>
             </div>
             {error && <div className="error">{error}</div>}
@@ -99,19 +98,19 @@ function SportPage() {
                   {weatherData.name}
                 </h2>
                 <p className="site__text">
-                  Температура: {Math.round(weatherData.main.temp - 273.15)}°C
+                  Temperature: {Math.round(weatherData.main.temp - 273.15)}°C
                 </p>
                 <p className="site__text">
-                  Влажность: {weatherData.main.humidity} %
+                  Humidity: {weatherData.main.humidity} %
                 </p>
                 <p className="site__text">
-                  Давление: {weatherData.main.pressure} hPa
+                  Pressure: {weatherData.main.pressure} hPa
                 </p>
                 <p className="site__text">
-                  Скорость ветра: {weatherData.wind.speed} м/с
+                  Wind speed: {weatherData.wind.speed} m/s
                 </p>
                 <p className="site__text">
-                  Описание: {weatherData.weather[0].description}
+                  Description: {weatherData.weather[0].description}
                 </p>
               </div>
             )}
@@ -122,7 +121,7 @@ function SportPage() {
               <p className="site__text">{getSportRecommendation()}</p>
             </div>
           ) : (
-            <p className="site__text">Загрузка данных о погоде...</p>
+            <p className="site__text">Loading weather data...</p>
           )}
         </div>
       </div>
