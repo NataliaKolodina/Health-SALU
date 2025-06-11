@@ -15,28 +15,28 @@ const SleepQuality = () => {
 
     let newMessage = '';
 
-    // Проверка на хорошее качество сна
-    if (bedtimeHour >= 21 && bedtimeHour <= 23  && sleep >= 7 && sleep <= 9) {
-      newMessage = 'Ваш сон считается хорошим. Это важно, потому что качественный сон с 7-9 часами помогает поддерживать здоровье и восстанавливает силы. Убедитесь, что вы ложитесь спать в этом временном окне для наилучшего отдыха.';
+    // Check for good sleep quality
+    if (bedtimeHour >= 21 && bedtimeHour <= 23 && sleep >= 7 && sleep <= 9) {
+      newMessage = 'Your sleep is considered good. This is important because quality sleep of 7-9 hours helps maintain health and restores energy. Make sure to go to bed during this time window for the best rest.';
     } else {
       if (bedtimeHour < 21) {
-        newMessage += 'Рекомендуется ложиться спать в период с 21:00 до 23:59. Это время наиболее благоприятно для организма, так как в этот период происходят важные процессы восстановления. Ложась спать позже или раньше, вы рискуете нарушить циркадные ритмы организма.';
+        newMessage += 'It is recommended to go to bed between 21:00 and 23:59. This time is most beneficial for the body, as important recovery processes take place. Going to bed earlier or later may disrupt the body’s circadian rhythms.';
       } else if (sleep < 7) {
-        newMessage += ' Сон менее 7 часов вреден, так как это не позволяет организму полностью восстановиться. Рекомендуется спать 7-9 часов, чтобы поддерживать нормальное функционирование организма и нервной системы.';
+        newMessage += ' Sleeping less than 7 hours is harmful because it doesn’t allow the body to fully recover. It is recommended to sleep 7-9 hours to support proper functioning of the body and nervous system.';
       } else if (sleep > 9) {
-        newMessage += ' Сон более 9 часов также может быть вредным, так как слишком долгий сон может свидетельствовать о проблемах с качеством отдыха или заболеваниях. Лучше придерживаться диапазона 7-9 часов для оптимального восстановления.';
+        newMessage += ' Sleeping more than 9 hours may also be harmful, as excessive sleep can be a sign of poor sleep quality or health issues. It’s better to stick to the 7-9 hour range for optimal recovery.';
       }
     }
 
-    // Общие рекомендации
+    // General recommendations
     newMessage += `
       \n
       
-      Общие рекомендации:      
-      1. Создайте расслабляющую обстановку перед сном: избегайте яркого света и электронных устройств.
-      2. Поддерживайте регулярный график сна, ложитесь и вставайте в одно и то же время.
-      3. Убедитесь, что ваш матрас и подушка комфортные.
-      4. Избегайте кофеина и тяжелой пищи за несколько часов до сна.
+      General recommendations:      
+      1. Create a relaxing environment before bed: avoid bright lights and electronic devices.
+      2. Maintain a consistent sleep schedule—go to bed and wake up at the same time each day.
+      3. Make sure your mattress and pillow are comfortable.
+      4. Avoid caffeine and heavy meals a few hours before sleep.
     `;
     setMessage(newMessage);
   };
@@ -46,11 +46,11 @@ const SleepQuality = () => {
       <Header />
       <div className='site__size'>
       <div className='container site__space'>
-      <h1 className='site__heading'>Оценка качества сна</h1>
-      <p className='site__text site__text-habitsinfo'>Контроль за сном важен для поддержания здоровья, энергии и общего благополучия. Качественный сон помогает восстанавливать силы, улучшает память, концентрацию и иммунитет.</p>
-      <form className=' site__form-sleep'  onSubmit={handleSubmit}>
-        <div className=' site__form-mobile site__form'>
-          <label className='site__subtitle'>Количество часов сна:</label>
+      <h1 className='site__heading'>Sleep Quality Assessment</h1>
+      <p className='site__text site__text-habitsinfo'>Monitoring your sleep is important for maintaining health, energy, and overall well-being. Quality sleep helps restore energy, improve memory, focus, and immunity.</p>
+      <form className='site__form-sleep' onSubmit={handleSubmit}>
+        <div className='site__form-mobile site__form'>
+          <label className='site__subtitle'>Number of hours slept:</label>
           <input className='site__input'
             type="number"
             value={sleepHours}
@@ -61,7 +61,7 @@ const SleepQuality = () => {
           />
         </div>
         <div className='site__form-mobile site__form'>
-          <label className='site__subtitle'>Во сколько вы легли спать? (время в формате HH:MM):</label>
+          <label className='site__subtitle'>What time did you go to bed? (format HH:MM):</label>
           <input className='site__input'
             type="time"
             value={bedtime}
@@ -69,22 +69,19 @@ const SleepQuality = () => {
             required
           />
         </div>
-        <button className='site__btn' type="submit">Проверить</button>
+        <button className='site__btn' type="submit">Check</button>
       </form>
 
       {message && (
         <div className='site__form-result'>
-          <h2 className='site__subtitle'>Рекомендации:</h2>
+          <h2 className='site__subtitle'>Recommendations:</h2>
           <p className="site__text">{message}</p>
         </div>
       )}
    </div>
    </div>
       <Footer />
-    
-</>
-
-    
+    </>
   );
 };
 
