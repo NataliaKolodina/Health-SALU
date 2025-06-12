@@ -4,13 +4,6 @@
 
 ---
 
-## Demo
-
-Explore the live demo here:  
-[https://nataliakolodina.github.io/Health-SALU/#/](https://nataliakolodina.github.io/Health-SALU/#/)
-
----
-
 ## Overview
 
 Health-SALU addresses the common challenge of tracking multiple health aspects in a convenient and integrated way. It empowers users to monitor hydration, physical activity, nutrition, sleep quality, and other habits, providing tailored advice to promote wellbeing.
