@@ -4,6 +4,17 @@
 
 ---
 
+## 🔗 Demo version
+
+You can view the live demo of this project here:  
+👉 [Click to open the live version](https://nataliakolodina.github.io/Health-SALU/)
+
+This demo is deployed via **GitHub Pages** and built with React.
+
+> Please note: the site may take a few seconds to load the first time.
+
+---
+
 ## Overview
 
 Health-SALU addresses the common challenge of tracking multiple health aspects in a convenient and integrated way. It empowers users to monitor hydration, physical activity, nutrition, sleep quality, and other habits, providing tailored advice to promote wellbeing.
