@@ -11,8 +11,6 @@ You can view the live demo of this project here:
 
 This demo is deployed via **GitHub Pages** and built with React.
 
-> Please note: the site may take a few seconds to load the first time.
-
 ---
 
 ## Overview
